@@ -55,10 +55,7 @@
 	{
 	}
 	
-	a
-	{
-		color: #0000FF;
-	}
+
 	
 	a:hover
 	{
@@ -220,13 +217,43 @@
 		border-radius: 20px;
 		text-align: center;
 		color: #272925;
+
 	}
 	
 	.button_style2
 	{
 		display: inline-block;
-		padding: 0em 3em;
 		background: #FFF;
+		letter-spacing: 0.20em;
+		line-height: 4em;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 1em;
+		color: #009E2D;
+		
+	}
+	
+	.button_style2:before
+	{
+		display: inline-block;
+		background: #FFF;
+		margin-right: 1em;
+		width: 50%;
+		height: 50%;
+		line-height: 40px;
+		border-radius: 20px;
+		text-align: center;
+		color: #009E2D;
+		
+	}
+	
+		.button_style1
+	{
+		display: inline-block;
+		padding: 0em 0em;
+		margin: 1em;
+		background: #009E2D;
 		letter-spacing: 0.20em;
 		line-height: 4em;
 		text-decoration: none;
@@ -235,20 +262,21 @@
 		width: 50%;
 		height: 50%;
 		font-size: 1em;
-		color: #009E2D;
+		border-radius: 5px;
+		color: #FFF;
 	}
 	
-	.button_style2:before
+		.button_style1:before
 	{
 		display: inline-block;
-		background: #272925;
+		background: #FFC31F;
 		margin-right: 1em;
 		width: 50%;
 		height: 50%;
 		line-height: 40px;
 		border-radius: 20px;
 		text-align: center;
-		color: #FFC31F;
+		color: #272925;
 	}
 	
 /*********************************************************************************/
@@ -570,7 +598,7 @@
 
 	#featured a
 	{
-		color: rgba(255,255,255,1);
+		color: #009E2D;
 	}
 	
 	#featured .button
@@ -677,16 +705,35 @@
 /*********************************************************************************/
 
 
-a:hover {
-    background-color: #009E2D;
-	border-radius: 5px;
-	color: #FFF;
-}
-
-a:active {
-    background-color: hotpink;
-}
 li
 {
 	margin: 2px;
 }
+
+div.buttonlink:hover {
+	padding-right:2em;
+	padding-left:2em;
+	border-radius: 5px;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.3);
+	
+}
+div.buttonlink{
+	border-radius: 5px;
+	padding-right:2em;
+	padding-left:2em;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+div.buttonlink2:hover {
+	border-radius: 5px;
+    box-shadow: 0 5px 35px rgba(0,158,45,0.3);
+	
+}
+div.buttonlink2{
+	border-radius: 5px;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+
