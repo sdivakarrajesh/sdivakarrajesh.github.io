@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+</head>
+<body>
+<div id="wrapper">
+	<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="#">Personal Blog</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html" accesskey="1" title="">Profile</a></li>
+				<li><a href="sheet2list.html" accesskey="2" title="">My Works</a></li>
+				<li class="current_page_item"><a href="eslambook.html" accesskey="3" title="">More</a></li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	
+
+	<div id="strip" class="container">
+	<div class="title"><h2><br>MY First Internship!</h2></div>
+	<div class="card">
+	<div class="section">
+	<div class="description-right">
+			<h2 class="byline">What I did there as an intern?</h2> 
+			 <p><br>I worked on integrating SAML authentication to a webApp. If you have looked carefully when you try to login using Google or any other services you might have come across OAuth2<br>
+			 SAML is very similar to that.
+			</p>
+	</div>
+	</div>	
+	</div>
+	<div class="card">
+	<div class="section">
+			<h2 class="byline">What is SAML Authentication?</h2>
+			<p>
+				<br>SAML - Security Assertion Markup Language<br>
+				It is used to provide authentication and authorization between services. Typically a Service provider and an Identity provider
+				It is an XML - based markup language for security assertions. It also facilitates Single Sign On(SSO) where the user's authentication information persists across different browser sessions.
+				
+				
+				Who is a service provider?
+				It is the service or product that you are trying to access. Example: Trying to access an online video-streaming service
+				
+				
+				Who is an Identity provider?
+				An identity provider is the one who authenticates that the user is who he/she claims to be, by verifying the creditials, commonly a username and a password.
+				
+				
+			</p>
+		
+		
+	</div>
+	</div>
+	<div class="card">
+	<div class="section">
+		<div class="description-right">
+			<h2 class="byline">What are the specifics?</h2>
+			<p>
+			> I was asked to implement a test webApp and deploy it in a TomCat Server.<br>
+			> The user has to sign-in using any one his favorite Identity from the options available .
+			> This causes the browser has to create a SAML request and redirect to the identity providers site to carry out the authentication process.
+			> After authentication based on the SAML reponse, the user's role has to extracted from the response and has to be redirected based on the role(Admin or User) and land on different pages.
+			
+			<br>
+			</p>
+		</div>
+		
+	</div>
+	</div>
+	<div class="card">
+	<div class="section">
+
+			<h2 class="byline">OneLogin as an Identity provider</h2>
+			<p>
+				<br>OneLogin has a sample tutorial written for java <a href="https://developers.onelogin.com/saml/java">here</a> that explains all the necessary steps that are to followed to get a sample application up and running<br>
+				
+				OneLogin also has a toolkit that handles all the hard-lifting such as creating a SAML request, parsing and validating a SAML reponse and all that.
+				In no time I was able to set up a sample application that has oneLogin sign-in
+				One great issue that had while implementing oneLogin is that if you opt fingerPrint aside the X.509 certificate, the fingerprint has to be unformatted or else you may get an idp/ certificate error
+				
+				You can use <a href="https://developers.onelogin.com/saml/online-tools/x509-certs/calculate-fingerprint">this simple tool</a> to get your unformatted fingerprint for the fingerPrint that you get in the admin console 
+			</p>
+		
+		
+	</div>
+	</div>		
+			
+	</div>
+	
+</div>
+<div id="copyright" class="container">
+	<p>&copy; 2018. All rights reserved. Designed and Maintained by <a href="#">Divakar Rajesh S</a>.</p>
+</div>
+</body>
+</html>

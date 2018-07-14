@@ -520,7 +520,7 @@
 
 	#featured a
 	{
-		color: #009E2D;
+		color: #FFFFFF;
 	}
 	
 	#featured .button
@@ -670,6 +670,10 @@ div.buttonlink2{
 	box-shadow: 5px 5px 35px rgba(0,0,0,0.3);
 	
 }
-
+.whitelink
+	{
+		text-decoration: underline;
+		color: rgba(255,255,255,0.8);
+	}
 
 
