@@ -25,12 +25,12 @@
 		
 	}
 	
-	p, ol, ul
+	p, ul
 	{
 		margin-top: 0;
 	}
 	
-	ol, ul
+	ul
 	{
 		padding: 0;
 		list-style: none;
