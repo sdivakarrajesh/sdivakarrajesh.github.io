@@ -2,7 +2,7 @@
 	{
 		height: 100%;
 	}
-	
+
 	body
 	{
 		margin: 0px;
@@ -13,8 +13,8 @@
 		font-weight: 300;
 		color: #656565;
 	}
-	
-	
+
+
 	h1, h2, h3
 	{
 		margin: 0;
@@ -22,53 +22,53 @@
 		font-weight: 700;
 		color: #2B3F48;
 		text-transform: uppercase;
-		
+
 	}
-	
+
 	p, ul
 	{
 		margin-top: 0;
 	}
-	
+
 	ul
 	{
 		padding: 0;
 		list-style: none;
 	}
-	
+
 	ul.actions
 	{
 		text-align: center;
 	}
-		
+
 		ul.actions li
 		{
 		}
-	
+
 	p
 	{
 		line-height: 180%;
-		
+
 	}
-	
+
 	strong
 	{
 	}
-	
 
-	
+
+
 	a:hover
 	{
 		text-decoration: none;
 	}
-	
+
 	.container
 	{
 		overflow: hidden;
 		margin: 0em auto;
 		width: 1000px;
 	}
-	
+
 /*********************************************************************************/
 /* Image Style                                                                   */
 /*********************************************************************************/
@@ -77,20 +77,20 @@
 	{
 		display: inline-block;
 	}
-	
+
 	.image img
 	{
 		display: block;
 		width: 100%;
 	}
-	
+
 	.image-full
 	{
 		display: block;
 		width: 100%;
 		margin: 0 0 2em 0;
 	}
-	
+
 	.image-left
 	{
 		float: left;
@@ -98,7 +98,7 @@
 		margin: 0 2em 2em 0;
 		vertical-align: middle
 	}
-	
+
 	.image-right
 	{
 		float: right;
@@ -106,13 +106,13 @@
 		margin: 0 2em 2em 0;
 		vertical-align: middle
 	}
-	
+
 	.image-centered
 	{
 		display: block;
 		margin: 0 0 2em 0;
 	}
-	
+
 	.image-centered img
 	{
 		margin: 0 auto;
@@ -132,7 +132,7 @@
 	{
 		display: inline-block;
 	}
-	
+
 	ul.staff li img
 	{
 		width: 80%;
@@ -150,26 +150,26 @@
 		padding: 2em 0em 0em 0em;
 		list-style: none;
 	}
-	
+
 	ul.contact li
 	{
 		display: inline-block;
 		padding: 0em 0.30em;
 		font-size: 1em;
 	}
-	
+
 	ul.contact li span
 	{
 		display: none;
 		margin: 0;
 		padding: 0;
 	}
-	
+
 	ul.contact li a
 	{
 		color: #FFF;
 	}
-	
+
 	ul.contact li a:before
 	{
 		display: inline-block;
@@ -181,7 +181,7 @@
 		text-align: center;
 		color: #FFFFFF;
 	}
-	
+
 	ul.contact li a.icon-twitter:before { background: #2DAAE4; }
 	ul.contact li a.icon-facebook:before { background: #39599F; }
 	ul.contact li a.icon-dribbble:before { background: #C4376B;	}
@@ -205,7 +205,7 @@
 		font-size: 1em;
 		color: #FFF;
 	}
-	
+
 	.button:before
 	{
 		display: inline-block;
@@ -219,7 +219,7 @@
 		color: #272925;
 
 	}
-	
+
 	.button_style2
 	{
 		display: inline-block;
@@ -232,9 +232,9 @@
 		font-size: 1em;
 		color: #009E2D;
 		margin: 2em;
-		
+
 	}
-	
+
 	.button_style2:before
 	{
 		display: inline-block;
@@ -246,9 +246,9 @@
 		border-radius: 20px;
 		text-align: center;
 		color: #009E2D;
-		
+
 	}
-	
+
 		.button_style1
 	{
 		display: inline-block;
@@ -264,7 +264,7 @@
 		border-radius: 5px;
 		color: #FFF;
 	}
-	
+
 		.button_style1:before
 	{
 		display: inline-block;
@@ -277,7 +277,7 @@
 		text-align: center;
 		color: #272925;
 	}
-	
+
 /*********************************************************************************/
 /* Heading Titles                                                                */
 /*********************************************************************************/
@@ -286,32 +286,32 @@
 	{
 		margin-bottom: 3em;
 	}
-	
+
 	.title h2
 	{
 		/*text-transform: uppercase;*/
 		font-size: 2.7em;
 	}
-	
+
 	.title .byline
 	{
 		font-size: 1.7em;
 		color: #6F6F6F;
 	}
-	
+
 	.byline
 	{
 		font-size: 1.7em;
 		color: #6F6F6F;
 		vertical-align: middle;
 	}
-	
+
 /*********************************************************************************/
 /* 2-column                                                                      */
 /*********************************************************************************/
 
 
-	
+
 	#wrapper
 	{
 		background: #FFF;
@@ -342,12 +342,12 @@
 		top: 1.5em;
 		left: 0;
 	}
-	
+
 	#logo h1
 	{
 		color: #FFF;
 	}
-	
+
 	#logo a
 	{
 		text-decoration: none;
@@ -365,19 +365,19 @@
 		top: 1.5em;
 		right: 0;
 	}
-	
+
 	#menu ul
 	{
 		display: inline-block;
 	}
-	
+
 	#menu li
 	{
 		display: block;
 		float: left;
 		text-align: center;
 	}
-	
+
 	#menu li a, #menu li span
 	{
 		padding: 1em 1.5em;
@@ -387,19 +387,19 @@
 		font-size: 0.8em;
 		color: #FFF;
 	}
-	
+
 	#menu li:hover a, #menu li.active a, #menu li.active span
 	{
 		color: #FFF;
 	}
-	
+
 	#menu .current_page_item a
 	{
 		background: #009E2D;
 		border-radius: 5px;
 		color: #FFF;
 	}
-	
+
 	#menu .icon
 	{
 	}
@@ -433,7 +433,7 @@
 	{
 		color: rgba(255,255,255,.6);
 	}
-	
+
 	#banner .button
 	{
 		margin-top: 3em;
@@ -449,7 +449,7 @@
 		padding: 5em 0em;
 		text-align: center;
 	}
-	
+
 	#page .button
 	{
 		margin-top: 2em;
@@ -491,14 +491,14 @@
 		padding: 3em 0em;
 		border-top: 1px solid rgba(255,255,255,0.08);
 	}
-	
+
 	#copyright p
 	{
 		text-align: center;
 		font-size: 1em;
 		color: rgba(255,255,255,0.5);
 	}
-	
+
 	#copyright a
 	{
 		text-decoration: none;
@@ -522,7 +522,7 @@
 	{
 		color: #FFFFFF;
 	}
-	
+
 	#featured .button
 	{
 		background: #FFF;
@@ -563,17 +563,17 @@
 		overflow: hidden;
 		padding: 5em 0em;
 	}
-	
+
 	#extra .title
 	{
 		text-align: center;
 	}
-	
+
 	#extra .button
 	{
 		margin-top: 5em;
 	}
-	
+
 	#extra .fa
 	{
 		display: block;
@@ -592,7 +592,7 @@
 		padding: 5em 0em;
 		text-align: center;
 	}
-	
+
 	#page .button
 	{
 		margin-top: 2em;
@@ -610,9 +610,9 @@
 .description-right
 {
 	width: 75%;
-	
+
 	padding : 3em;
-	
+
 }
 
 .description-left
@@ -636,8 +636,8 @@ div.buttonlink:hover {
 	padding-right:2em;
 	padding-left:2em;
 	border-radius: 5px;
-    box-shadow: 0 5px 35px rgba(0,0,0,0.3);
-	
+  box-shadow: 0 5px 35px rgba(0,0,0,0.3);
+
 }
 div.buttonlink{
 	border-radius: 5px;
@@ -651,8 +651,8 @@ div.buttonlink2:hover {
 	border-radius: 5px;
 	padding-right:2em;
 	padding-left:2em;
-    box-shadow: 0 10px 35px rgba(0,158,45,0.3);
-	
+    box-shadow: 0 5px 35px rgba(0,0,0,0.3);
+
 }
 div.buttonlink2{
 	border-radius: 5px;
@@ -668,12 +668,10 @@ div.buttonlink2{
 	margin-top: 3em;
 	margin-bottom: 3em;
 	box-shadow: 5px 5px 35px rgba(0,0,0,0.3);
-	
+
 }
 .whitelink
 	{
 		text-decoration: underline;
 		color: rgba(255,255,255,0.8);
 	}
-
-
