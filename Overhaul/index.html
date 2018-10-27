@@ -11,11 +11,11 @@
 <body>
     <div class="sticky-header">
         <div id="menu">
-            <div class="nav">
+            <nav>
                 <a href="#">HOME</a>
                 <a href="#">PROJECTS</a>
                 <a href="#">OTHER</a>
-            </div>
+            </nav>
         </div>
     </div>
     
@@ -245,7 +245,19 @@
                 lobortis arcu nec nisl ornare mollis. Proin quis molestie ipsum, condimentum suscipit lectus.
             </p>
        </div>
-       
+       <script src="jquery-3.1.0.min.js"></script>
+       <script>
+           $(function () {
+                $(window).scroll(function () {
+                    var winTop = $(window).scrollTop();
+                    if (winTop >= 50) {
+
+                    } else {
+
+                    }
+                });
+            });
+       </script>
    </div>
 </body>
 </html>
