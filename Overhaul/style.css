@@ -35,7 +35,24 @@ nav a:hover{
 }
 
 #container{
-    position: relative;
+    display: block;
+    min-height: 100%;
+    margin-top: 50px;
+    margin-bottom: -120px; 
+}
+
+#container::after{
+    content: "";
     display: block;
 }
 
+footer, #container::after{
+    height: 120px;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
