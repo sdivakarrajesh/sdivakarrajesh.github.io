@@ -46,6 +46,39 @@ nav a:hover{
     display: block;
 }
 
+.portfolio{
+    margin: 64px 64px;
+    color: #555555;
+}
+
+.portfolio::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.portfolio > div{    
+    display: block;
+    float: left;
+    width: 30%;
+    margin: 10px;
+    background-color: #f7f6f6;
+    color: #555555;
+}
+
+.portfolio-block{
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
 footer, #container::after{
     height: 120px;
     background-color: black;
