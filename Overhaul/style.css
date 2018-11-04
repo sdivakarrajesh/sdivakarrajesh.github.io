@@ -62,7 +62,7 @@ nav a:hover{
     float: left;
     width: 30%;
     margin: 10px;
-    background-color: #f7f6f6;
+    background-color: white;
     color: #555555;
 }
 
@@ -71,11 +71,6 @@ nav a:hover{
     text-align: center;
     border-radius: 5px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-}
-
-ul{
-    list-style-type: none;
-    padding: 0;
 }
 
 .line{
@@ -89,20 +84,74 @@ ul{
     position: relative;
     display: inline-block;
     margin: 10px;
-    top: 5px;
+    margin-left: -10px;
+    margin-top:20px;
+    top: 10px;
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
-
 }
 
+
 .content{
-    padding: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.content ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content ul li:nth-child(2n) {
+     background-color: #ffffff;
+}
+
+.content ul li:nth-child(2n+1) {
+     background-color: #f8f8f8;
+}
+
+.content ul li{
+    padding: 10px 20px;
+}
+
+.explore{
+    display: block;
+    padding: 20px 30px;
+    color: white;
+    margin-top: 30px; 
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#desktop-explore{
+    background-color: #006DF0;
+}
+#mobile-explore{
+    background-color: #92DD5A;
+}
+#web-explore{
+    background-color: #FFDB42;
+}
+
+#desktop{
+    color: #006DF0;
+}
+
+#mobile{
+    color: #92DD5A;
+}
+
+#web{
+    color:#FFDB42;
 }
 
 .category-icon{
     height: 64px;
     width: 64px;
+    padding: 15px;
     vertical-align: middle;
 }
 
