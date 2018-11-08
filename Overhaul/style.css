@@ -181,6 +181,134 @@ nav > div > a:hover{
     vertical-align: middle;
 }
 
+#social-media{
+    margin: 50px;
+    min-height: 64px;
+}
+
+.fa {
+    padding: 15px 15px;
+    font-size: 1.8rem;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all ease 0.3s;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.9;
+}
+
+/* Set a specific color for each brand */
+
+/* Google */
+.fa-google {
+    background: #DD4B39;
+    color: white;
+    position: relative;
+}
+
+.fa-google::after{
+    position: absolute;
+    top: 35%;
+    right: 0.6rem;
+    content: "Follow Me";
+    opacity: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fa-google:hover{
+    padding: 20px 110px 20px 20px;
+}
+
+.fa-google:hover::after{
+    right: 1.2rem;
+    opacity: 1;
+    transition: all ease 0.4s;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    position: relative;
+}
+.fa-twitter::after{
+    position: absolute;
+    top: 35%;
+    right: 0.6rem;
+    content: "Follow Me";
+    opacity: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fa-twitter:hover{
+    padding: 20px 110px 20px 20px;
+}
+
+.fa-twitter:hover::after{
+    right: 1.2rem;
+    opacity: 1;
+    transition: all ease 0.4s;
+}
+
+.fa-github {
+    background: #999999;
+    color: white;
+    position: relative;
+}
+.fa-github::after{
+    position: absolute;
+    top: 35%;
+    right: 0.6rem;
+    content: "Star Me";
+    opacity: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fa-github:hover{
+    padding: 20px 90px 20px 20px;
+}
+
+.fa-github:hover::after{
+    right: 1.2rem;
+    opacity: 1;
+    transition: all ease 0.4s;
+}
+
+.fa-linkedin {
+    background: #0082CA;
+    color: white;
+    position: relative;
+}
+.fa-linkedin::after{
+    position: absolute;
+    top: 35%;
+    right: 0.6rem;
+    content: "Check Out";
+    opacity: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fa-linkedin:hover{
+    padding: 20px 110px 20px 20px;
+}
+
+.fa-linkedin:hover::after{
+    right: 1.2rem;
+    opacity: 1;
+    transition: all ease 0.4s;
+}
 
 
 footer, #container::after{
