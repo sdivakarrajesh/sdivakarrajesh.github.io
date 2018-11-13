@@ -96,15 +96,10 @@ nav > div > a:hover{
     overflow: hidden;
     text-align: center;
     border-radius: 5px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
-.line{
-    position: relative;
-    top: 0%;
-    height: 10px;
-    background-image: linear-gradient(to top right, black, white);
-}
+
 
 .app-category{
     position: relative;
@@ -173,12 +168,28 @@ nav > div > a:hover{
 #web{
     color:#FFDB42;
 }
+.line{
+    position: relative;
+    top: 0%;
+    height: 5px;
+    background-color: currentColor;
+}
+
+.apps{
+    color: black;
+}
 
 .category-icon{
     height: 64px;
     width: 64px;
     padding: 15px;
     vertical-align: middle;
+}
+
+.portfolio-block:hover{
+    outline: 3px solid currentColor;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    transition: all ease 0.2s;
 }
 
 #social-media{
