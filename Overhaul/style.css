@@ -72,7 +72,28 @@ nav > div > a:hover{
     display: block;
 }
 
+
+#intro-block{
+    display: flex;
+    align-items:center;
+}
+#circle-pic{
+    margin: 40px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    float: left;
+    vertical-align: middle;
+
+}
+#intro{
+    margin: 40px;
+}
+
+
 .portfolio{
+    clear: both;
     margin: 64px 64px;
     color: #555555;
 }
