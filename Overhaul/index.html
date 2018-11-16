@@ -8,7 +8,7 @@
     
     <link href="style.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Divakar Rajesh | Blog</title>
+    <title>Divakar Rajesh | Portfolio</title>
 </head>
 <body>
     <div class="sticky-header">
@@ -34,23 +34,31 @@
     <br>
     <br>
    <div id="container">
-
-       <div id="intro-block">
-            <img src="assets/profile pic.jpg" alt="circular image" id="circle-pic">
-            
-            <p id="intro">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu tincidunt ex. Mauris neque est, cursus non vehicula
-                vitae, volutpat sed mauris. In hac habitasse platea dictumst. Morbi eget urna sed sem feugiat condimentum quis in
-                mauris. Donec tristique iaculis magna, non molestie odio interdum posuere. Curabitur sed tempus odio. In vulputate,
-                nibh id porttitor tempus, turpis turpis aliquet est, sed rutrum dui ante id tortor. Sed finibus, augue in maximus
-                posuere, sapien orci mattis purus, a laoreet nibh massa eget nibh.
-            </p>
-            
-
-
+        <div class="banner">
+        
+        </div>
+       <div id="intro-block" align="center">
+           <div id="intro-image">
+                <img src="assets/profile pic.jpg" alt="circular image" id="circle-pic">
+            </div>
+            <div id="intro-text">
+                <p id="intro">
+                    <span id="hi">Hi!</span>
+                    <br>
+                    I'm currently on my final year - Bachelors in Engineering <br>
+                    With a GPA of 8.64/10 <br>
+                    At Velammal College Of Engineering and Technology, Madurai <br>
+                    Affiliated to Anna University. <br>
+                </p>
+            </div>
+                
+       </div>
+       <div class="moto">
 
        </div>
+    <h2 class="heading" align="center">Check out my works</h2>
        <div class="portfolio">
+           
            <div class="portfolio-block" id="desktop">
                 <div class="line"></div>
                 <div class="content">
@@ -112,6 +120,11 @@
             <a href="https://www.linkedin.com/in/sdivakarrajesh/" class="fa fa-linkedin"></a>
             <a href="https://github.com/sdivakarrajesh" class="fa fa-github"></a>
         </div>
+
+        <div id="social" align="center">
+            E-mail your suggestions, collaboration, or just talk!<br>
+            sdivakarrajesh@gmail.com
+        </div>
     </div>
 
     <footer>
@@ -126,10 +139,10 @@
             $(window).scroll(function () {
                 var winTop = $(window).scrollTop();
                 if (winTop >= 50) {
-                    $("#menu").css("background-color","rgba(0, 0, 0, 0.9)");
+                    $("#menu").css("background-color","rgba(25, 25, 25, 0.9)");
                     console.log("more than 100");
                 } else {
-                    $("#menu").css("background-color", "black");
+                    $("#menu").css("background-color", "rgba(25,25,25)");
                     console.log("no");
                 }
             });

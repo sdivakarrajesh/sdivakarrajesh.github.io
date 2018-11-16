@@ -1,18 +1,24 @@
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+a{
+    text-decoration: none;
 }
 #menu{
     display: block;
     position: fixed;
     top: 0;
     right: 0;
-    background-color: rgba(0, 0, 0,1);
+    background-color: rgba(25, 25, 25,1);
     width: 100%;
     height: 80px;
     margin-top: 0;
     z-index: 99;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    box-shadow: 0 0 15px rgba(25,25,25,0.2);
 }
 nav{
     margin: 0;
@@ -35,6 +41,12 @@ nav > div > a{
 }
 nav > div > a:hover{
     color: #3A96D8;
+}
+
+.banner{
+    width: 100%;
+    height: 500px;
+    background-image: 
 }
 
 .projects-options{
@@ -74,28 +86,55 @@ nav > div > a:hover{
 
 
 #intro-block{
-    display: flex;
     align-items:center;
 }
+#intro-image, #intro-text{
+    display: inline-block;
+    text-align: left;
+}
+
+
 #circle-pic{
-    margin: 40px;
     position: relative;
     width: 200px;
     height: 200px;
+    margin-left: 20px;
     border-radius: 50%;
     float: left;
     vertical-align: middle;
 
 }
+
+#hi{
+    line-height: 1;
+    font-size: 5rem;
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
 #intro{
     margin: 40px;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.moto{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 500px;
+    width: 100%;
+    background-color: #282828;
+    opacity: 0.9;
 }
 
 
 .portfolio{
     clear: both;
     margin: 64px 64px;
-    color: #555555;
+    color: #c5c3c3;
+    margin-bottom: 100px;
+
 }
 
 .portfolio::after{
@@ -104,13 +143,21 @@ nav > div > a:hover{
     clear: both;
 }
 
+.heading{
+    clear: both;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #c5c3c3;
+}
+
 .portfolio > div{    
     display: block;
     float: left;
     width: 30%;
     margin: 10px;
     background-color: white;
-    color: #555555;
 }
 
 .portfolio-block{
@@ -160,9 +207,11 @@ nav > div > a:hover{
 }
 
 .explore{
+    text-decoration: none;
     display: block;
-    padding: 20px 30px;
     color: white;
+    
+    padding: 20px 30px;
     margin-top: 30px; 
     text-transform: uppercase;
     font-weight: 600;
@@ -197,7 +246,8 @@ nav > div > a:hover{
 }
 
 .apps{
-    color: black;
+    color: rgb(131, 130, 130);
+    font-size: 16px;
 }
 
 .category-icon{
@@ -225,8 +275,10 @@ nav > div > a:hover{
     text-align: center;
     text-decoration: none;
     transition: all ease 0.3s;
-    font-family: 'Roboto', sans-serif;
+    
     border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
     box-shadow: 0 5px 5px rgba(0,0,0,0.3);
 }
 
@@ -236,7 +288,9 @@ nav > div > a:hover{
 }
 
 /* Set a specific color for each brand */
-
+.fa-google::after,.fa-github::after,.fa-linkedin::after,.fa-twitter::after{
+    font-family: 'Roboto', sans-serif;
+}
 /* Google */
 .fa-google {
     background: #DD4B39;
@@ -250,9 +304,6 @@ nav > div > a:hover{
     right: 0.6rem;
     content: "Follow Me";
     opacity: 0;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-family: 'Roboto', sans-serif;
 }
 
 .fa-google:hover{
@@ -275,9 +326,7 @@ nav > div > a:hover{
     right: 0.6rem;
     content: "Follow Me";
     opacity: 0;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-family: 'Roboto', sans-serif;
+   
 }
 
 .fa-twitter:hover{
@@ -301,9 +350,7 @@ nav > div > a:hover{
     right: 0.6rem;
     content: "Star Me";
     opacity: 0;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-family: 'Roboto', sans-serif;
+   
 }
 
 .fa-github:hover{
@@ -327,9 +374,6 @@ nav > div > a:hover{
     right: 0.6rem;
     content: "Check Out";
     opacity: 0;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-family: 'Roboto', sans-serif;
 }
 
 .fa-linkedin:hover{
@@ -342,6 +386,13 @@ nav > div > a:hover{
     transition: all ease 0.4s;
 }
 
+#social{
+    text-align: center;
+    margin: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 1em;
+}
 
 footer, #container::after{
     height: 120px;
