@@ -3,6 +3,7 @@ body{
     margin: 0;
     line-height: 1.5;
     letter-spacing: 1px;
+    color: #323b40;
 }
 
 a{
@@ -13,12 +14,12 @@ a{
     position: fixed;
     top: 0;
     right: 0;
-    background-color: rgba(25, 25, 25,1);
+    background-color: rgb(51, 51, 51,1);
     width: 100%;
     height: 80px;
     margin-top: 0;
     z-index: 99;
-    box-shadow: 0 0 15px rgba(25,25,25,0.2);
+    box-shadow: 0 0 15px rgba(51,51,51,0.2);
 }
 nav{
     margin: 0;
@@ -43,10 +44,79 @@ nav > div > a:hover{
     color: #3A96D8;
 }
 
+.title{
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    color: #2B3F48;
+    text-transform: uppercase;
+    font-size: 1.7em;
+}
+
 .banner{
+    display: block;
     width: 100%;
-    height: 500px;
-    background-image: none;
+    height: 400px;
+    text-align: center;
+    background-color: rgb(43, 42, 42);
+}
+.banner-content{
+    color: white;
+    font-size: 5em;
+    padding-top: 1em;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 700;
+}
+.banner-btm{
+    display: block;
+    clear: both;
+    font-size: 2.5em;
+    color: rgba(255, 255, 255,6);
+    font-weight: 100;
+}
+.card{
+	border-radius: 10px;
+	padding: 2em;
+	margin: auto;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	box-shadow: 5px 5px 35px rgba(0,0,0,0.3);
+    width: 60%;
+    font-family: 'Roboto', sans-serif;
+    color: #656565
+}
+
+.card-title{
+    font-size: 1.7em;
+    color: #6F6F6F;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.image-left
+{
+    float: left;
+    width: 25%;
+    margin: 0 2em 2em 0;
+}
+
+.image-right
+{
+    float: right;
+    width: 25%;
+    margin: 0 2em 2em 0;
+}
+.playStoreImg{
+    width: 200px;
+    height: auto;
+}
+
+.section
+{
+	overflow: hidden;
+	margin: 2em auto;
+	width: 100%;
 }
 
 .projects-options{
@@ -73,8 +143,11 @@ nav > div > a:hover{
     color: #323b40;
 }
 #container{
+    overflow: hidden;
     display: block;
     min-height: 100%;
+    margin: 0em auto;
+    width: 100%;
     margin-top: 50px;
     margin-bottom: -120px; 
 }
@@ -120,6 +193,7 @@ nav > div > a:hover{
 }
 
 .moto{
+    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -133,16 +207,54 @@ nav > div > a:hover{
     position: relative;
     vertical-align: middle;
 }
+.moto-content{
+    font-family: 'Roboto Condensed', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    margin: auto;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.button_style{
+    letter-spacing: 0.20em;
+    font-weight: 300;
+    font-size: 0.5em;
+    color: #FFF;
+    transition: all ease 0.4s;
+}
+
+.button_style::after{
+        right: 0.6rem;
+        content: " >>";
+        transition: all ease 0.4s;
+        opacity: 0;
+}
+
+.button_style:hover{
+    padding: 20px 50px 20px 20px;
+}
+
+.button_style:hover::after{
+    right: 1rem;
+    opacity: 1;
+}
+
 
 .btn{
- 
+    border-radius: 7px;
     margin-top: 50px;
-    border: none;
-    width: 350px;
+    border: white solid 1px;
+    width: 400px;
     height: 70px;
     font-size: 1em;
-    background-color: white;
+    background-color: #282828;
+    color: white;
+    letter-spacing: 3px;
+}
+.btn:hover{
+    background-color: rgba(255, 255, 255, 0.76);
     color: black;
+    cursor: pointer;
 }
 
 
@@ -280,8 +392,35 @@ nav > div > a:hover{
     transition: all ease 0.2s;
 }
 
+.playprofile{
+    font-size: 2em;
+}
+.button-card{
+    text-decoration: none;
+    color: rgb(122, 121, 121);
+    font-size: 0.7em;
+    display: block;
+    width: 500px;
+    margin: 2em;
+    padding: 1em;
+	border-radius: 5px;
+	padding-right:1em;
+	padding-left:1em;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+	transition: box-shadow 0.3s ease-in-out;
+}
+.button-card:hover {
+	padding-right:1em;
+	padding-left:1em;
+	border-radius: 5px;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.3);
+
+}
+
+
 #social-media{
     margin: 50px;
+    margin-top: 150px;
     min-height: 64px;
 }
 
@@ -317,14 +456,14 @@ nav > div > a:hover{
 
 .fa-google::after{
     position: absolute;
-    top: 35%;
+    top: 36%;
     right: 0.6rem;
     content: "Follow Me";
     opacity: 0;
 }
 
 .fa-google:hover{
-    padding: 20px 110px 20px 20px;
+    padding: 20px 120px 20px 20px;
 }
 
 .fa-google:hover::after{
@@ -339,7 +478,7 @@ nav > div > a:hover{
 }
 .fa-twitter::after{
     position: absolute;
-    top: 35%;
+    top: 36%;
     right: 0.6rem;
     content: "Follow Me";
     opacity: 0;
@@ -347,7 +486,7 @@ nav > div > a:hover{
 }
 
 .fa-twitter:hover{
-    padding: 20px 110px 20px 20px;
+    padding: 20px 120px 20px 20px;
 }
 
 .fa-twitter:hover::after{
@@ -363,7 +502,7 @@ nav > div > a:hover{
 }
 .fa-github::after{
     position: absolute;
-    top: 35%;
+    top: 36%;
     right: 0.6rem;
     content: "Star Me";
     opacity: 0;
@@ -371,7 +510,7 @@ nav > div > a:hover{
 }
 
 .fa-github:hover{
-    padding: 20px 90px 20px 20px;
+    padding: 20px 95px 20px 20px;
 }
 
 .fa-github:hover::after{
@@ -387,14 +526,14 @@ nav > div > a:hover{
 }
 .fa-linkedin::after{
     position: absolute;
-    top: 35%;
-    right: 0.6rem;
+    top: 36%;
+    right: 0.3rem;
     content: "Check Out";
     opacity: 0;
 }
 
 .fa-linkedin:hover{
-    padding: 20px 110px 20px 20px;
+    padding: 20px 120px 20px 20px;
 }
 
 .fa-linkedin:hover::after{

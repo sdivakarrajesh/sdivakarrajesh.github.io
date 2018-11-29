@@ -1,84 +1,172 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Divakar Rajesh - Blog</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="http://fonts.googleapis.com/css?family=Varela" rel="stylesheet" />
-<link href="default.css" rel="stylesheet" type="text/css" media="all" />
-<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Divakar Rajesh | Portfolio</title>
 </head>
+
 <body>
-<div id="wrapper">
-	<div id="header-wrapper">
-	<div id="header" class="container">
-		<div id="logo">
-			<h1>Personal Blog</h1>
-		</div>
-		<div id="menu">
-			<ul>
-				<li class="current_page_item"><a href="index.html" accesskey="1" title="">Profile</a></li>
-				<li><a href="sheet2list.html" accesskey="2" title="">Projects</a></li>
-				<li><a href="exp.html" accesskey="3" title="">Experiences</a></li>
-			</ul>
-		</div>
-	</div>
-	</div>
-	<div id="banner">
-		<div class="container">
-			<div class="title">
-				<h2>DIVAKAR RAJESH S</h2>
-				<span class="byline">Android Developer | Machine Learning - Beginner</span> </div>
-				 <a href="#" class="button_style3">   CheckOut My RESUME   </a>
+    <div class="sticky-header">
+        <div id="menu">
+            <nav>
+                <div class="home-nav"><a href="index.html">HOME</a></div>
 
-		</div>
-	</div>
+                <div class="projects-nav"><a href="#">PROJECTS</a>
+                    <div class="projects-options">
+                        <a href="#">WEB</a>
+                        <a href="#">MOBILE</a>
+                        <a href="#">DESKTOP</a>
+                    </div>
+                </div>
 
-	<div id="extra" class="container">
-		<div class="title">
-			<h2>Featured Android Works</h2>
-			<br><br><br>
-			<a href="eslambook.html" class="button_style2"><div class="buttonlink">E-SlamBook</div></a>
-			<a href="sheet2list.html" class="button_style2"><div class="buttonlink">Sheet2List</div></a>
-		</div>
+                <div class="other-nav"><a href="internship.html">OTHER</a></div>
 
-	</div>
+            </nav>
+        </div>
+    </div>
 
 
-	<div id="featured">
-		<div class="container">
-			<div class="title">
-				<h2>MY FIRST INTERNSHIP</h2><br>
-				<span class="byline">AT ZOHO - AS A SOFTWARE ENGINEERING INTERN</span> </div>
-				<p><a href="internship.html" class="button_style1">Visit this post to know more!</a></p>
-		</div>
+    <div id="container">
+        <div class="banner">
+            <div class="banner-content">Divakar Rajesh</div>
+            <div class="banner-btm">ANDROID DEVELOPER | DEEP LEARNING BEGINNER</span></div>
+        </div>
+        <div id="intro-block" align="center">
+            <br>
+            <br>
+            <br>
+            <div id="intro-image">
+                <img src="assets/profile pic.jpg" alt="circular image" id="circle-pic">
+            </div>
+            <div id="intro-text">
+                <p id="intro">
+                    <span id="hi">Hi!</span>
+                    <br>
+
+                    I'm currently on my final year - Bachelors in Engineering <br>
+                    With a GPA of 8.64/10 <br>
+                    At Velammal College Of Engineering and Technology, Madurai <br>
+                    Affiliated to Anna University. <br>
+                </p>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="moto" align="center">
+            <br><br>
+            Most of my works are open source <br>
+            So, be sure to check out my github repos <br>
+            <a href="https://github.com/sdivakarrajesh"><button class="btn">View Github Profile</button></a>
+
+        </div>
+        <h2 class="heading" align="center">Check out my works</h2>
+        <div class="portfolio">
+
+            <div class="portfolio-block" id="desktop">
+                <div class="line"></div>
+                <div class="content">
+                    <img src="assets/desktop.png" alt="desktop-app-icon" class="category-icon">
+                    <span class="app-category" id="desktop">Desktop</span>
+                    <ul class="apps">
+                        <li>PDF Doctor</li>
+                        <li>SizeIt - For Images</li>
+                        <li>EnList - a Crossplatfrom Electron-js app</li>
+                    </ul>
+                    <a href=""><span class="explore" id="desktop-explore">3 projects</span></a>
 
 
+                </div>
 
-	</div>
-	<div id="page" class="container">
-		<div class="title">
-			<h2>About me? Well..</h2>
-			<span class="byline"><br>I'm doing my Bachelors in Mechanical Engineering at <br><br>Velammal College of Engineering and Technology,Madurai</span> </div>
-		<p> I have always been passionate about coding. Pursuing a different major didn't hold me back.<br>
-			Languages I speak include Python, Java and C ;-)
-		</p>
-		<a href="http://play.google.com/store/apps/dev?id=8739594812324937227" class="button_style2"><div class="buttonlink">View my Android play store profile</div></a>
-	</div>
-	<div id="page" class="container">
-		<div class="socialMedia">
-			<a href="https://plus.google.com/u/0/+DivakarRajesh" class="fa fa-google"></a>
-			<a href="https://mobile.twitter.com/DivakarRajeshS" class="fa fa-twitter"></a>
-			<a href="https://www.linkedin.com/in/sdivakarrajesh/" class="fa fa-linkedin"></a>
-			<a href="https://github.com/sdivakarrajesh" class="fa fa-github"></a>
-		</div>
-	</div>
-</div>
-<div id="copyright" class="container">
-	<p>&copy; 2018. All rights reserved. Designed with &#9829 by <a href="https://www.facebook.com/divakar.rajesh" target="_blank">Divakar Rajesh S</a>.</p>
-</div>
+            </div>
+            <div class="portfolio-block" id="mobile">
+                <div class="line"></div>
+                <div class="content">
+                    <img src="assets/mobile.png" alt="mobile-app-icon" class="category-icon">
+                    <span class="app-category" id="mobile">Mobile</span>
+                    <ul class="apps">
+                        <li>With Flutter - My JioFi Hotspot Manager</li>
+                        <li>Sheet2List - Database Management</li>
+                        <li>E-Slambook - slambook the modern way</li>
+                        <li>GPA/CGPA calculator</li>
+                    </ul>
+                    <a href=""><span class="explore" id="mobile-explore">5 Applications</span></a>
+                </div>
+            </div>
+
+            <div class="portfolio-block" id="web">
+                <div class="line"></div>
+                <div class="content">
+                    <img src="assets/web.png" alt="web-app-icon" class="category-icon">
+                    <span class="app-category" id="web">Web</span>
+                    <ul class="apps">
+                        <li>PlaySync - With node.js and websockets </li>
+                        <li>website - My portfolio</li>
+                        <li>Books - Online book reading platform</li>
+                    </ul>
+                    <a href=""><span class="explore" id="web-explore">3 Projects</span></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="moto" align="center">
+            <br>
+            <div class="moto-content"><span class="heading">My Internship at Zoho Corporation</span> <br>
+                As Software Engineering Intern <br> 
+                <a href="internship.html" class="button_style">Read more About it here</a></div>
+
+        </div>
+        <div class="playprofile" align="center">
+            <span class="heading">With more than 6k downloads</span>
+            <br><br>
+            <span class="moto-content">Check out the apps I've published</span> 
+            <a href="http://play.google.com/store/apps/dev?id=8739594812324937227" class="button-card">View My Android Play Store Profile</a>
+
+        </div>
+        <div id="social-media" align="center">
+            <a href="https://plus.google.com/u/0/+DivakarRajesh" class="fa fa-google"></a>
+            <a href="https://mobile.twitter.com/DivakarRajeshS" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/in/sdivakarrajesh/" class="fa fa-linkedin"></a>
+            <a href="https://github.com/sdivakarrajesh" class="fa fa-github"></a>
+        </div>
+
+        <div id="social" align="center">
+            E-mail your suggestions, collaboration, or just talk!<br>
+            sdivakarrajesh@gmail.com
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2018. All rights reserved. Designed with &#9829 by <a href="https://www.facebook.com/divakar.rajesh"
+                target="_blank">Divakar
+                Rajesh S</a>.</p>
+    </footer>
+
+
+    <script src="jquery-3.1.0.min.js"></script>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                var winTop = $(window).scrollTop();
+                if (winTop >= 50) {
+                    $("#menu").css("background-color", "rgba(25, 25, 25, 0.9)");
+                    console.log("more than 100");
+                } else {
+                    $("#menu").css("background-color", "rgba(51,51,51)");
+                    console.log("no");
+                }
+            });
+        });
+    </script>
+
+
 </body>
+
 </html>
