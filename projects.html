@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-    <link href="style.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="projects.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="stylesheets/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="stylesheets/projects.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Divakar Rajesh | Portfolio</title>
 </head>
@@ -32,10 +32,19 @@
             </nav>
         </div>
     </div>
+    <div class="side-nav">
+        <nav>
+            <ul>
+                <li><a href="#mobile-section" class="dot name-active"><span>Mobile</span></a></li>
+                <li><a href="#web-section" class="dot"><span>Web</span></a></li>
+                <li><a href="#desktop-section" class="dot"><span>Desktop</span></a></li>
+            </ul>
+        </nav>
+    </div>
 
 
     <div class="content">
-        <div id="mobile-section">
+        <section id="mobile-section">
             <div class="mobile-content">
                 <img src="assets/vectors/img3.jpg" alt="test" class="left-img">
                 <div class="left-float">
@@ -43,8 +52,8 @@
                     <button class="flat-btn">Explore</button>
                 </div>
             </div>
-        </div>
-        <div id="web-section">
+        </section>
+        <section id="web-section">
             <div class="web-content">
                 <img src="assets/vectors/img1.png" alt="" class="right-img">
                 <div class="right-float">
@@ -52,18 +61,97 @@
                     <button class="flat-btn">Explore</button>
                 </div>
             </div>
-        </div>
-        <div id="desktop-section">
+        </section>
+        <section id="desktop-section">
             <div class="desktop-content">
-                <img src="assets/vectors/img2.jpg" alt="test" class="left-img">
+                <img src="assets/vectors/img2.png" alt="test" class="left-img">
                 <div class="left-float">
                     <h2>Desktop Development</h2>
                     <button class="flat-btn">Explore</button>
                 </div>
             </div>
-        </div>
+        </section>
 
     </div>
+    <script src="scripts/jquery-3.1.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.scrollTo = $.fn.scrollTo = function (x, y, options) {
+                if (!(this instanceof $)) return $.fn.scrollTo.apply($('html, body'), arguments);
+                options = $.extend({}, {
+                    gap: {
+                        x: 0,
+                        y: 0
+                    },
+                    animation: {
+                        easing: 'swing',
+                        duration: 600,
+                        complete: $.noop,
+                        step: $.noop
+                    }
+                }, options);
+                return this.each(function () {
+                    var elem = $(this);
+                    elem.stop().animate({
+                        scrollLeft: !isNaN(Number(x)) ? x : $(y).offset().left + options.gap.x,
+                        scrollTop: !isNaN(Number(y)) ? y : $(y).offset().top + options.gap.y
+                    }, options.animation);
+                });
+            };
+            var aChildren = $("nav li").children();
+            var aArray = [];
+            for (var i = 0; i < aChildren.length; i++) {
+                var aChild = aChildren[i];
+                var ahref = $(aChild).attr('href');
+                aArray.push(ahref);
+            }
+            
+            $(window).scroll(function () {
+                var windowPos = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                var docHeight = $(document).height();
+
+                for (var i = 0; i < aArray.length; i++) {
+                    var theID = aArray[i];
+                    var divPos = $(theID).offset().top;
+                    var divHeight = $(theID).height();
+
+                    if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
+                        $("a[href='" + theID + "']").addClass("name-active");
+                        if(theID==="#web-section"){
+                            $(".dot").css("background-color", "rgba(231, 229, 229, 0.4)");
+                            $(".dot:hover").css("background-color", "rgba(231, 229, 229, 0.8)");
+                            $(".name-active").css("background-color", "rgb(155, 155, 155)");
+                        }
+                        else{
+                            $(".dot").css("background-color", "rgba(253, 245, 245, 0.747)");
+                            $(".dot:hover").css("background-color", "rgba(226, 222, 222, 0.8)");
+                            $(".name-active").css("background-color", "rgb(155, 155, 155)");
+                        }
+
+                    } else {
+                        $("a[href='" + theID + "']").removeClass("name-active");
+                    }
+                }
+                if (windowPos + windowHeight == docHeight) {
+                    if (!$("nav li:last-child a").hasClass("name-active")) {
+                        var navActiveCurrent = $(".name-active").attr("href");
+                        $("a[href='" + navActiveCurrent + "']").removeClass("name-active");
+                        $("nav li:last-child a").addClass("name-active");
+
+                        ;
+                    }
+                }
+            });
+            $(".side-nav nav a").click(function (evn) {
+                evn.preventDefault();
+                $('html,body').scrollTo(this.hash, this.hash);
+                var section = evn.currentTarget.hash;
+                console.log(section);
+
+            });
+        });
+    </script>
 
 
 </body>

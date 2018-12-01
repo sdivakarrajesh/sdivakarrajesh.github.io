@@ -1,0 +1,143 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+#menu {
+    background-color: white;
+    box-shadow: none;
+    position: relative;
+}
+
+#menu>nav>div>a {
+    color: rgb(161, 159, 159);
+}
+
+#menu>nav>div>a:hover {
+    color: rgb(73, 73, 73);
+}
+
+#mobile-section {
+    clear: both;
+    background-color: #B1DAF0;
+    width: 100%;
+}
+
+#desktop-section {
+    clear: both;
+    background-color: #E0E4ED;
+    width: 100%;
+}
+
+#web-section {
+    clear: both;
+    background-color: white;
+    width: 100%;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100vh;
+    height: auto;
+}
+
+.right-img {
+    clear: both;
+    position: relative;
+    right: 0;
+    float: right;
+}
+
+.left-img {
+    clear: both;
+    position: relative;
+    left: 0;
+}
+
+.flat-btn {
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.left-float {
+    position: relative;
+    margin-top: 40vh;
+    margin-right: 40vh;
+    float: right;
+}
+
+.right-float {
+    position: relative;
+    float: right;
+    margin-top: 40vh;
+    margin-right: 30vh;
+}
+
+/*sidebar nav*/
+
+.side-nav {
+    position: absolute;
+    right: 0;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(253, 245, 245, 0.747);
+    
+     border-radius: 10px;
+    z-index: 99;
+    content: '';
+    color: transparent;
+    font-size: 14px;
+    line-height: 10px;
+    vertical-align: middle;
+    margin: 5px 0 5px 0;
+    font-weight: 300;
+}
+
+.dot:hover {
+    background-color: rgba(226, 222, 222, 0.8);
+    color: rgba(255, 255, 255, .8);
+}
+
+.dot span {
+    margin: 0px 0px 20px 15px;
+    position: relative;
+    top: 0px;
+    left: -80px;
+}
+
+.side-nav>nav {
+    width: 100px;
+    height: 200px;
+    /*background-color:rgb(240,240,240); border:solid 1px rgb(220,220,220);*/
+    padding: 0 0px;
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translate(0, -50%);
+    z-index: 10000;
+    text-align: right;
+}
+
+.side-nav>nav ul li a {
+    text-decoration: none;
+}
+
+.side-nav>nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.name-active {
+    color: rgba(255, 255, 255, .8);
+    background-color: rgb(155, 155, 155);
+    text-align: right;
+}

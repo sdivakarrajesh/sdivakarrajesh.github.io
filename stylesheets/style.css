@@ -22,7 +22,7 @@ a{
     box-shadow: 0 0 15px rgba(51,51,51,0.2);
 }
 
-nav{
+#menu > nav{
     margin: 0;
     position: relative;
     display: inline;
@@ -32,16 +32,16 @@ nav{
     margin-top: -10px;
     margin-right: 10px;
 }
-nav > div{
+#menu > nav > div{
     display: inline;
 }
-nav > div > a{
+#menu > nav > div > a{
     margin: 0 10px 10px 10px;
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
-nav > div > a:hover{
+#menu > nav > div > a:hover{
     color: rgba(255, 255, 255, 0.74);
 }
 
