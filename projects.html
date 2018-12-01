@@ -46,27 +46,55 @@
     <div class="content">
         <section id="mobile-section">
             <div class="mobile-content">
-                <img src="assets/vectors/img3.jpg" alt="test" class="left-img">
-                <div class="left-float">
+                <div class="side1">
+                    <img src="assets/vectors/img3.jpg" alt="test">
+                </div>
+                <div class="side2">
                     <h2>Mobile Development</h2>
-                    <button class="flat-btn">Explore</button>
+                    <h2>Flutter</h2>
+                    <h3>My JioFi</h3> - An Application that lets users to easily manage their JioFi 6(JMR815) <br>
+                     with a sleek easy-to-use dashboard
+                    <h2>Java</h2>
+                    <h3>E-Slambook</h3> - An Social media application that allows users to share their favorite moments 
+                    with friends and colleges <br> <br>
+                    <h3>Sheet2List</h3> - An Application that parses data from databases and presents them in an easy
+                    to browse format in the form of searchable list that expands the fields upon selection <br> <br>
+
+                    <button class="flat-btn">Get from Play Store</button>
                 </div>
             </div>
         </section>
         <section id="web-section">
             <div class="web-content">
-                <img src="assets/vectors/img1.png" alt="" class="right-img">
-                <div class="right-float">
+                <div class="side1">
                     <h2>Web Development</h2>
+                    <h3>PlaySync</h3> - A WebApp built with node.js that allows users to sync their users YouTube video
+                    playback (Built
+                    with socket.io)
+                    <h3>Online Book reading</h3> - A website that allows users to upload or read Books online. It has
+                    separate SAML SSO
+                    login flows for users and admins.
                     <button class="flat-btn">Explore</button>
                 </div>
+                <div class="side2">
+                    <img src="assets/vectors/img1.png" alt="" class="right-img">
+                </div>
+
             </div>
         </section>
         <section id="desktop-section">
             <div class="desktop-content">
-                <img src="assets/vectors/img2.png" alt="test" class="left-img">
-                <div class="left-float">
+                <div class="side1">
+                    <img src="assets/vectors/img2.png" alt="test">
+                </div>
+
+                <div class="side2">
                     <h2>Desktop Development</h2>
+                    <h3>PDF DOctor</h3> - A GUI application built with python's tkinter to manipulate PDFs.
+                    <h3>SizeIt</h3> - I searched online a lot to easily resize bulk images. Couldn't find one. So I
+                    made one!
+                    <h3>EnList</h3> - My venture into building beautiful cross platfrom desktop applications using
+                    Electron.js
                     <button class="flat-btn">Explore</button>
                 </div>
             </div>
@@ -74,9 +102,13 @@
 
     </div>
     <script src="scripts/jquery-3.1.0.min.js"></script>
+    <script src="scripts/snap-scroll.min.js"></script>
     <script>
         $(document).ready(function () {
+            $("section").SnapScroll();
             $.scrollTo = $.fn.scrollTo = function (x, y, options) {
+
+
                 if (!(this instanceof $)) return $.fn.scrollTo.apply($('html, body'), arguments);
                 options = $.extend({}, {
                     gap: {
@@ -90,6 +122,8 @@
                         step: $.noop
                     }
                 }, options);
+
+
                 return this.each(function () {
                     var elem = $(this);
                     elem.stop().animate({
@@ -97,6 +131,7 @@
                         scrollTop: !isNaN(Number(y)) ? y : $(y).offset().top + options.gap.y
                     }, options.animation);
                 });
+
             };
             var aChildren = $("nav li").children();
             var aArray = [];
@@ -105,11 +140,16 @@
                 var ahref = $(aChild).attr('href');
                 aArray.push(ahref);
             }
-            
+
             $(window).scroll(function () {
                 var windowPos = $(window).scrollTop();
                 var windowHeight = $(window).height();
                 var docHeight = $(document).height();
+                var scroll = $(window).scrollTop();
+
+
+
+
 
                 for (var i = 0; i < aArray.length; i++) {
                     var theID = aArray[i];
@@ -118,12 +158,12 @@
 
                     if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
                         $("a[href='" + theID + "']").addClass("name-active");
-                        if(theID==="#web-section"){
+                        if (theID === "#web-section") {
                             $(".dot").css("background-color", "rgba(231, 229, 229, 0.4)");
                             $(".dot:hover").css("background-color", "rgba(231, 229, 229, 0.8)");
                             $(".name-active").css("background-color", "rgb(155, 155, 155)");
                         }
-                        else{
+                        else {
                             $(".dot").css("background-color", "rgba(253, 245, 245, 0.747)");
                             $(".dot:hover").css("background-color", "rgba(226, 222, 222, 0.8)");
                             $(".name-active").css("background-color", "rgb(155, 155, 155)");
@@ -147,7 +187,8 @@
                 evn.preventDefault();
                 $('html,body').scrollTo(this.hash, this.hash);
                 var section = evn.currentTarget.hash;
-                console.log(section);
+                console.log(this.hash, this.hash);
+
 
             });
         });

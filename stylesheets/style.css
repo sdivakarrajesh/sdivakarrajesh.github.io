@@ -1,4 +1,4 @@
-body{
+body {
     font-family: 'Roboto Condensed', "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
     line-height: 1.5;
@@ -6,46 +6,51 @@ body{
     color: #323b40;
 }
 
-a{
+a {
     text-decoration: none;
 }
-#menu{
+
+#menu {
     display: block;
     position: fixed;
     top: 0;
     right: 0;
-    background-color: rgb(51, 51, 51,1);
+    background-color: rgb(51, 51, 51, 1);
     width: 100%;
     height: 80px;
     margin-top: 0;
     z-index: 99;
-    box-shadow: 0 0 15px rgba(51,51,51,0.2);
+    box-shadow: 0 0 15px rgba(51, 51, 51, 0.2);
 }
 
-#menu > nav{
+#menu>nav {
     margin: 0;
     position: relative;
     display: inline;
     right: 0;
     float: right;
-    top:50%;
+    top: 50%;
     margin-top: -10px;
     margin-right: 10px;
 }
-#menu > nav > div{
+
+#menu>nav>div {
     display: inline;
 }
-#menu > nav > div > a{
+
+#menu>nav>div>a {
     margin: 0 10px 10px 10px;
     text-decoration: none;
     color: white;
     font-weight: bold;
+    padding: 10px;
 }
-#menu > nav > div > a:hover{
+
+#menu>nav>div>a:hover {
     color: rgba(255, 255, 255, 0.74);
 }
 
-.title{
+.title {
     margin: 0;
     padding: 0;
     font-weight: 700;
@@ -54,14 +59,15 @@ a{
     font-size: 1.7em;
 }
 
-.banner{
+.banner {
     display: block;
     width: 100%;
     height: 400px;
     text-align: center;
     background-color: rgb(43, 42, 42);
 }
-.banner-content{
+
+.banner-content {
     color: white;
     font-size: 5em;
     padding-top: 1em;
@@ -69,100 +75,124 @@ a{
     letter-spacing: 10px;
     font-weight: 700;
 }
-.banner-btm{
+
+.banner-btm {
     display: block;
     clear: both;
     font-size: 2.5em;
-    color: rgba(255, 255, 255,6);
+    color: rgba(255, 255, 255, 6);
     font-weight: 100;
 }
-.card{
-	border-radius: 10px;
-	padding: 2em;
-	margin: auto;
-	margin-top: 3em;
-	margin-bottom: 3em;
-	box-shadow: 5px 5px 35px rgba(0,0,0,0.3);
+
+.card {
+    border-radius: 10px;
+    padding: 2em;
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.3);
     width: 60%;
     font-family: 'Roboto', sans-serif;
     color: #656565
 }
 
-.card-title{
+.card-title {
     font-size: 1.7em;
     color: #6F6F6F;
     vertical-align: middle;
     text-transform: uppercase;
 }
 
-.image-left
-{
+.image-left {
     float: left;
     width: 25%;
     margin: 0 2em 2em 0;
 }
 
-.image-right
-{
+.image-right {
     float: right;
     width: 25%;
     margin: 0 2em 2em 0;
 }
-.playStoreImg{
+
+.playStoreImg {
     width: 200px;
     height: auto;
 }
 
-.section
-{
-	overflow: hidden;
-	margin: 2em auto;
-	width: 100%;
+.section {
+    overflow: hidden;
+    margin: 2em auto;
+    width: 100%;
 }
 
-.projects-options{
+.projects-options {
     position: absolute;
     display: none;
-    top: 100%;
-    left: -25px;
+    left: 50%;
+    top: calc(100% + 10px);
+    transform: translateX(-50%);
     min-width: 200px;
     background-color: #ffffff;
     color: #323b40;
-    box-shadow: 0 3px 2px rgba(0,0,0,0.3);
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
 }
 
-.projects-nav:hover .projects-options{display: block;}
-.projects-options > a{
+.projects-nav:hover .projects-options {
+    display: block;
+}
+
+.projects-options>a {
     display: block;
     padding: 10px;
     text-decoration: none;
     border-width: 0;
     border-top: 1px solid #e0e0e0;
 }
-.projects-options > a:hover{
-    background-color:#f0f0f0;
+
+.projects-options>a:hover {
+    background-color: #f0f0f0;
     color: #323b40;
 }
-#container{
+
+.projects-nav:hover .projects-options::after {
+    display: inline-block;
+}
+
+.projects-options::after {
+    position: absolute;
+    z-index: 100;
+    display: none;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    content: "";
+    top: 0%;
+    left: 50%;
+    border-bottom-color: white;
+    transform: translateY(-100%);
+}
+
+#container {
     overflow: hidden;
     display: block;
     min-height: 100%;
     margin: 0em auto;
     width: 100%;
     margin-top: 50px;
-    margin-bottom: -120px; 
+    margin-bottom: -120px;
 }
 
-#container::after{
+#container::after {
     content: "";
     display: block;
 }
 
-
-#intro-block{
-    align-items:center;
+#intro-block {
+    align-items: center;
 }
-#intro-image, #intro-text{
+
+#intro-image, #intro-text {
     display: inline-block;
     text-align: left;
     margin: 40px;
@@ -170,8 +200,7 @@ a{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-#circle-pic{
+#circle-pic {
     position: relative;
     top: 50px;
     width: 250px;
@@ -181,8 +210,7 @@ a{
     float: left;
 }
 
-#hi{
-    
+#hi {
     line-height: 1;
     font-size: 5rem;
     letter-spacing: 5px;
@@ -190,9 +218,7 @@ a{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-
-.moto{
-    
+.moto {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -206,7 +232,8 @@ a{
     position: relative;
     vertical-align: middle;
 }
-.moto-content{
+
+.moto-content {
     font-family: 'Roboto Condensed', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.5em;
     margin: auto;
@@ -214,7 +241,8 @@ a{
     text-transform: uppercase;
     font-weight: 300;
 }
-.button_style{
+
+.button_style {
     letter-spacing: 0.20em;
     font-weight: 300;
     font-size: 0.5em;
@@ -222,24 +250,23 @@ a{
     transition: all ease 0.4s;
 }
 
-.button_style::after{
-        right: 0.6rem;
-        content: " >>";
-        transition: all ease 0.4s;
-        opacity: 0;
+.button_style::after {
+    right: 0.6rem;
+    content: " >>";
+    transition: all ease 0.4s;
+    opacity: 0;
 }
 
-.button_style:hover{
+.button_style:hover {
     padding: 20px 50px 20px 20px;
 }
 
-.button_style:hover::after{
+.button_style:hover::after {
     right: 1rem;
     opacity: 1;
 }
 
-
-.btn{
+.btn {
     border-radius: 7px;
     margin-top: 50px;
     border: white solid 1px;
@@ -250,14 +277,14 @@ a{
     color: white;
     letter-spacing: 3px;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: rgba(255, 255, 255, 0.76);
     color: black;
     cursor: pointer;
 }
 
-
-.portfolio{
+.portfolio {
     clear: both;
     margin: 64px 64px;
     color: #c5c3c3;
@@ -266,13 +293,13 @@ a{
     left: 2%;
 }
 
-.portfolio::after{
+.portfolio::after {
     display: table;
     content: "";
     clear: both;
 }
 
-.heading{
+.heading {
     clear: both;
     font-size: 2rem;
     font-weight: 500;
@@ -281,7 +308,7 @@ a{
     color: #c5c3c3;
 }
 
-.portfolio > div{    
+.portfolio>div {
     display: block;
     float: left;
     width: 30%;
@@ -289,113 +316,113 @@ a{
     background-color: white;
 }
 
-.portfolio-block{
+.portfolio-block {
     overflow: hidden;
     text-align: center;
     border-radius: 5px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-
-
-.app-category{
+.app-category {
     position: relative;
     display: inline-block;
     margin: 10px;
     margin-left: -10px;
-    margin-top:20px;
+    margin-top: 20px;
     top: 10px;
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-
-.content{
+.content {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.content ul{
+.content ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
 .content ul li:nth-child(2n) {
-     background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 .content ul li:nth-child(2n+1) {
-     background-color: #f8f8f8;
+    background-color: #f8f8f8;
 }
 
-.content ul li{
+.content ul li {
     padding: 10px 20px;
 }
 
-.explore{
+.explore {
     text-decoration: none;
     display: block;
     color: white;
-    
     padding: 20px 30px;
-    margin-top: 30px; 
+    margin-top: 30px;
     text-transform: uppercase;
     font-weight: 600;
 }
 
-#desktop-explore{
+#desktop-explore {
     background-color: #006DF0;
 }
-#mobile-explore{
+
+#mobile-explore {
     background-color: #92DD5A;
 }
-#web-explore{
+
+#web-explore {
     background-color: #FFDB42;
 }
 
-#desktop{
+#desktop {
     color: #006DF0;
 }
 
-#mobile{
+#mobile {
     color: #92DD5A;
 }
 
-#web{
-    color:#FFDB42;
+#web {
+    color: #FFDB42;
 }
-.line{
+
+.line {
     position: relative;
     top: 0%;
     height: 5px;
     background-color: currentColor;
 }
 
-.apps{
+.apps {
     color: rgb(131, 130, 130);
     font-size: 16px;
 }
 
-.category-icon{
+.category-icon {
     height: 64px;
     width: 64px;
     padding: 15px;
     vertical-align: middle;
 }
 
-.portfolio-block:hover{
+.portfolio-block:hover {
     outline: 3px solid currentColor;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     transition: all ease 0.2s;
 }
 
-.playprofile{
+.playprofile {
     font-size: 2em;
 }
-.button-card{
+
+.button-card {
     text-decoration: none;
     color: rgb(122, 121, 121);
     font-size: 0.7em;
@@ -403,22 +430,21 @@ a{
     width: 500px;
     margin: 2em;
     padding: 1em;
-	border-radius: 5px;
-	padding-right:1em;
-	padding-left:1em;
-	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-	transition: box-shadow 0.3s ease-in-out;
+    border-radius: 5px;
+    padding-right: 1em;
+    padding-left: 1em;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
 }
+
 .button-card:hover {
-	padding-right:1em;
-	padding-left:1em;
-	border-radius: 5px;
-    box-shadow: 0 5px 35px rgba(0,0,0,0.3);
-
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: 5px;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.3);
 }
 
-
-#social-media{
+#social-media {
     margin: 50px;
     margin-top: 150px;
     min-height: 64px;
@@ -431,30 +457,33 @@ a{
     text-align: center;
     text-decoration: none;
     transition: all ease 0.3s;
-    
     border-radius: 5px;
     font-weight: 600;
     text-transform: uppercase;
-    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* Add a hover effect if you want */
+
 .fa:hover {
     opacity: 0.9;
 }
 
 /* Set a specific color for each brand */
-.fa-google::after,.fa-github::after,.fa-linkedin::after,.fa-twitter::after{
+
+.fa-google::after, .fa-github::after, .fa-linkedin::after, .fa-twitter::after {
     font-family: 'Roboto', sans-serif;
 }
+
 /* Google */
+
 .fa-google {
     background: #DD4B39;
     color: white;
     position: relative;
 }
 
-.fa-google::after{
+.fa-google::after {
     position: absolute;
     top: 36%;
     right: 0.6rem;
@@ -462,34 +491,35 @@ a{
     opacity: 0;
 }
 
-.fa-google:hover{
+.fa-google:hover {
     padding: 20px 120px 20px 20px;
 }
 
-.fa-google:hover::after{
+.fa-google:hover::after {
     right: 1.2rem;
     opacity: 1;
     transition: all ease 0.4s;
 }
+
 .fa-twitter {
     background: #55ACEE;
     color: white;
     position: relative;
 }
-.fa-twitter::after{
+
+.fa-twitter::after {
     position: absolute;
     top: 36%;
     right: 0.6rem;
     content: "Follow Me";
     opacity: 0;
-   
 }
 
-.fa-twitter:hover{
+.fa-twitter:hover {
     padding: 20px 120px 20px 20px;
 }
 
-.fa-twitter:hover::after{
+.fa-twitter:hover::after {
     right: 1.2rem;
     opacity: 1;
     transition: all ease 0.4s;
@@ -500,20 +530,20 @@ a{
     color: white;
     position: relative;
 }
-.fa-github::after{
+
+.fa-github::after {
     position: absolute;
     top: 36%;
     right: 0.6rem;
     content: "Star Me";
     opacity: 0;
-   
 }
 
-.fa-github:hover{
+.fa-github:hover {
     padding: 20px 95px 20px 20px;
 }
 
-.fa-github:hover::after{
+.fa-github:hover::after {
     right: 1.2rem;
     opacity: 1;
     transition: all ease 0.4s;
@@ -524,7 +554,8 @@ a{
     color: white;
     position: relative;
 }
-.fa-linkedin::after{
+
+.fa-linkedin::after {
     position: absolute;
     top: 36%;
     right: 0.3rem;
@@ -532,17 +563,17 @@ a{
     opacity: 0;
 }
 
-.fa-linkedin:hover{
+.fa-linkedin:hover {
     padding: 20px 120px 20px 20px;
 }
 
-.fa-linkedin:hover::after{
+.fa-linkedin:hover::after {
     right: 1.2rem;
     opacity: 1;
     transition: all ease 0.4s;
 }
 
-#social{
+#social {
     text-align: center;
     margin: 20px;
     line-height: 1.5;
@@ -550,75 +581,74 @@ a{
     font-size: 1em;
 }
 
-footer, #container::after{
+footer, #container::after {
     margin-top: 30px;
     height: 120px;
     background-color: black;
     text-align: center;
     color: white;
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: white;
 }
 
-   @media screen and (max-width:1023px) {
-       .portfolio{
-           width: 100%;
-           margin: 0px;
-       }
-        .portfolio > div{
-            float: none;
-            width: 90%;
-            margin: 25px auto;
-        }
-        .banner{
-            height: 200px;
-        }
-        .banner-content{
-            position: relative;
-            top: 40px;
-            margin: auto;
-            font-size: 2em;
-            letter-spacing: 5px;    
-        }
-        .banner-btm{
-            position: relative;
-            top: 45px;
-            font-size: 0.9em;
-        }
-        #intro{
-            font-size: 1.5em;
-        }
-        #circle-pic{
-            width: 35%;
-            height: auto;
-            float: left;
-        }
-        #hi{
-            display: inline-block;
-            position: relative;
-            top: 30px;
-            margin-left: 20px;
-        }
-
-        .moto{
-            font-size: 1.3em;
-        }
-        .btn{
-            width: 75%;
-        }
-        .heading{
-            font-size: 1.5rem;
-        }
-        .moto-content{
-            font-size: 2rem;
-        }
-        .button-card{
-            margin: 50px auto;
-            padding: 16px;
-            width: 90%;
-            font-size: 1.2rem;
-        }
-    
-   }
+@media screen and (max-width:1023px) {
+    .portfolio {
+        width: 100%;
+        margin: 0px;
+    }
+    .portfolio>div {
+        float: none;
+        width: 90%;
+        margin: 25px auto;
+    }
+    .banner {
+        height: 200px;
+    }
+    .banner-content {
+        position: relative;
+        top: 40px;
+        margin: auto;
+        font-size: 2em;
+        letter-spacing: 5px;
+    }
+    .banner-btm {
+        position: relative;
+        top: 45px;
+        font-size: 0.9em;
+    }
+    #intro {
+        font-size: 1.5em;
+    }
+    #circle-pic {
+        width: 35%;
+        height: auto;
+        float: left;
+    }
+    #hi {
+        display: inline-block;
+        position: relative;
+        top: 30px;
+        margin-left: 20px;
+    }
+    .moto {
+        font-size: 1.3em;
+    }
+    .btn {
+        width: 75%;
+    }
+    .heading {
+        font-size: 1.5rem;
+    }
+    .moto-content {
+        font-size: 2rem;
+    }
+    .button-card {
+        margin: 50px auto;
+        padding: 16px;
+        width: 90%;
+        font-size: 1.2rem;
+    }
+}

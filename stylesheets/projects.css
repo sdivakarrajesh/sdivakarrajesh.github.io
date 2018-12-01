@@ -33,26 +33,34 @@ body, html {
     clear: both;
     background-color: white;
     width: 100%;
-    overflow: hidden;
 }
 
 img {
-    max-width: 100%;
+    min-width: 50%;
     max-height: 100vh;
     height: auto;
 }
 
-.right-img {
-    clear: both;
-    position: relative;
-    right: 0;
-    float: right;
+.web-content, .desktop-content, .mobile-content {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
-.left-img {
-    clear: both;
+.side1 {
     position: relative;
-    left: 0;
+    align-self: center;
+    
+}
+
+.side2 {
+    align-self: center;
+    float: right;
+    word-break: break-word;
+    margin: 10px;
+}
+
+.web-content > .side1{
+    margin-left: 40px;
 }
 
 .flat-btn {
@@ -61,20 +69,6 @@ img {
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
-}
-
-.left-float {
-    position: relative;
-    margin-top: 40vh;
-    margin-right: 40vh;
-    float: right;
-}
-
-.right-float {
-    position: relative;
-    float: right;
-    margin-top: 40vh;
-    margin-right: 30vh;
 }
 
 /*sidebar nav*/
@@ -89,8 +83,7 @@ img {
     width: 10px;
     height: 10px;
     background-color: rgba(253, 245, 245, 0.747);
-    
-     border-radius: 10px;
+    border-radius: 10px;
     z-index: 99;
     content: '';
     color: transparent;
