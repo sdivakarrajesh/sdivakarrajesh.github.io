@@ -3,20 +3,6 @@ body, html {
     margin: 0;
 }
 
-#menu {
-    background-color: white;
-    box-shadow: none;
-    position: relative;
-}
-
-#menu>nav>div>a {
-    color: rgb(161, 159, 159);
-}
-
-#menu>nav>div>a:hover {
-    color: rgb(73, 73, 73);
-}
-
 #mobile-section {
     clear: both;
     background-color: #B1DAF0;
@@ -49,7 +35,6 @@ img {
 .side1 {
     position: relative;
     align-self: center;
-    
 }
 
 .side2 {
@@ -59,7 +44,7 @@ img {
     margin: 10px;
 }
 
-.web-content > .side1{
+.web-content>.side1 {
     margin-left: 40px;
 }
 
@@ -69,6 +54,21 @@ img {
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
+}
+
+.black {
+    color: black;
+}
+
+.try {
+    color: black;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.button_style:hover {
+    padding: 20px 30px 20px 10px;
 }
 
 /*sidebar nav*/
