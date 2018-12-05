@@ -15,8 +15,9 @@
 <body>
     <div class="sticky-header">
         <div id="menu">
-            
+
             <nav>
+                <div class="fa fa-bars"></div>
                 <div class="home-nav"><a href="index.html">HOME</a></div>
 
                 <div class="projects-nav"><a href="pages/projects.html">PROJECTS</a>
@@ -45,11 +46,11 @@
             <br>
             <div id="intro-image">
                 <img src="assets/profile pic.jpg" alt="circular image" id="circle-pic">
-               
+
                 <div id="intro-text">
                     <span id="hi">Hi!</span>
                     <p id="intro">
-                        
+
                         I'm currently on my final year - Bachelors in Engineering <br>
                         With a GPA of 8.65/10 <br>
                         At Velammal College Of Engineering and Technology, Madurai <br>
@@ -57,13 +58,13 @@
                     </p>
                 </div>
             </div>
-            
+
             <br>
             <br>
             <br>
         </div>
         <div class="moto" align="center">
-            <br><br>
+
             Most of my works are open source <br>
             So, be sure to check out my github repos <br>
             <a href="https://github.com/sdivakarrajesh"><button class="btn">View Github Profile</button></a>
@@ -118,18 +119,19 @@
             </div>
 
         </div>
-        <div class="moto" align="center">
-            <br>
+        <div class="moto internship" align="center">
+
             <div class="moto-content"><span class="heading">My Internship at Zoho Corporation</span> <br>
-                As Software Engineering Intern <br> 
+                As Software Engineering Intern <br>
                 <a href="pages/internship.html" class="button_style">Read more About it here</a></div>
 
         </div>
         <div class="playprofile" align="center">
             <span class="heading">With more than 6k downloads</span>
             <br><br>
-            <span class="moto-content">Check out the apps I've published</span> 
-            <a href="http://play.google.com/store/apps/dev?id=8739594812324937227" class="button-card">View My Android Play Store Profile</a>
+            <span class="moto-content">Check out the apps I've published</span>
+            <a href="http://play.google.com/store/apps/dev?id=8739594812324937227" class="button-card">View My Android
+                Play Store Profile</a>
 
         </div>
         <div id="social-media" align="center">
@@ -152,21 +154,8 @@
     </footer>
 
 
-    <script src="jquery-3.1.0.min.js"></script>
-    <script>
-        $(function () {
-            $(window).scroll(function () {
-                var winTop = $(window).scrollTop();
-                if (winTop >= 50) {
-                    $("#menu").css("background-color", "rgba(25, 25, 25, 0.9)");
-                    console.log("more than 100");
-                } else {
-                    $("#menu").css("background-color", "rgba(51,51,51)");
-                    console.log("no");
-                }
-            });
-        });
-    </script>
+    <script src="scripts/jquery-3.1.0.min.js"></script>
+    <script src="scripts/scroll-behavior.js"></script>
 
 
 </body>

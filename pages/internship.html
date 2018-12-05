@@ -16,6 +16,7 @@
     <div class="sticky-header">
         <div id="menu">
             <nav>
+                <div class="fa fa-bars"></div>
                 <div class="home-nav"><a href="../index.html">HOME</a></div>
 
                 <div class="projects-nav"><a href="projects.html">PROJECTS</a>
@@ -34,8 +35,8 @@
 
 
     <div id="container">
-        
-        
+
+
         <div class="title" align="center">
             <h1><br>MY First Internship at Zoho Corp!</h1>
         </div>
@@ -43,11 +44,13 @@
             <div class="section">
                 <div class="description-right">
                     <h2 class="card-title">What I did there as an intern?</h2>
-                    <p><br>I worked on integrating SAML authentication to a webApp. If you have looked carefully when you try
+                    <p><br>I worked on integrating SAML authentication to a webApp. If you have looked carefully when
+                        you try
                         to login using Google or any other services you might have come across OAuth2<br>
                         SAML is very similar to that.
                         Take a look at <a href="https://github.com/sdivakarrajesh/integrating_saml_authentication/tree/master/saml_login_with_opensaml">this
-                            repo</a> that is similar to that and demonstrates the SP - initiated login flow using SAML 2.0
+                            repo</a> that is similar to that and demonstrates the SP - initiated login flow using SAML
+                        2.0
                     </p>
                 </div>
             </div>
@@ -57,25 +60,28 @@
                 <h2 class="card-title">What is SAML Authentication?</h2>
                 <p>
                     <br>SAML - Security Assertion Markup Language<br>
-                    It is used to provide authentication and authorization between services. Typically a Service provider and
+                    It is used to provide authentication and authorization between services. Typically a Service
+                    provider and
                     an Identity provider
-                    It is an XML - based markup language for security assertions. It also facilitates Single Sign On(SSO) where
+                    It is an XML - based markup language for security assertions. It also facilitates Single Sign
+                    On(SSO) where
                     the user's authentication information persists across different browser sessions.
-        
-        
+
+
                     Who is a service provider?
                     It is the service or product that you are trying to access. Example: Trying to access an online
                     video-streaming service
-        
-        
+
+
                     Who is an Identity provider?
-                    An identity provider is the one who authenticates that the user is who he/she claims to be, by verifying
+                    An identity provider is the one who authenticates that the user is who he/she claims to be, by
+                    verifying
                     the creditials, commonly a username and a password.
-        
-        
+
+
                 </p>
-        
-        
+
+
             </div>
         </div>
         <div class="card">
@@ -85,57 +91,64 @@
                     <p>
                         > I was asked to implement a test webApp and deploy it in a TomCat Server.<br>
                         > The user has to sign-in using any one his favorite Identity from the options available .
-                        > This causes the browser has to create a SAML request and redirect to the identity providers site to
+                        > This causes the browser has to create a SAML request and redirect to the identity providers
+                        site to
                         carry out the authentication process.
-                        > After authentication based on the SAML reponse, the user's role has to extracted from the response
+                        > After authentication based on the SAML reponse, the user's role has to extracted from the
+                        response
                         and has to be redirected based on the role(Admin or User) and land on different pages.
-        
+
                         <br>
                     </p>
                 </div>
-        
+
             </div>
         </div>
         <div class="card">
             <div class="section">
-        
+
                 <h2 class="card-title">OneLogin as an Identity provider</h2>
                 <p>
                     <br>OneLogin has a sample tutorial written for java <a href="https://developers.onelogin.com/saml/java">here</a>
-                    that explains all the necessary steps that are to followed to get a sample application up and running<br>
-        
-                    OneLogin also has a toolkit that handles all the hard-lifting such as creating a SAML request, parsing and
+                    that explains all the necessary steps that are to followed to get a sample application up and
+                    running<br>
+
+                    OneLogin also has a toolkit that handles all the hard-lifting such as creating a SAML request,
+                    parsing and
                     validating a SAML reponse and all that.
                     In no time I was able to set up a sample application that has oneLogin sign-in
                     One great issue that had while implementing oneLogin is that if you opt fingerPrint aside the X.509
                     certificate, the fingerprint has to be unformatted or else you may get an idp/ certificate error
-        
+
                     You can use <a href="https://developers.onelogin.com/saml/online-tools/x509-certs/calculate-fingerprint">this
-                        simple tool</a> to get your unformatted fingerprint for the fingerPrint that you get in the admin
+                        simple tool</a> to get your unformatted fingerprint for the fingerPrint that you get in the
+                    admin
                     console
                 </p>
-        
-        
+
+
             </div>
         </div>
-        
+
         <div class="card">
             <div class="section">
-        
+
                 <h2 class="card-title">Okta as an Identity provider</h2>
                 <p>
-                    <br>Unlike OneLogin I wasn't able to find an out-of-the-box toolkit for Okta. So, I decided to create the
+                    <br>Unlike OneLogin I wasn't able to find an out-of-the-box toolkit for Okta. So, I decided to
+                    create the
                     SAML request and parse and validate the reponse on my own.
-                    Then After a lot of surfing i found that there are plenty of libraries out there that eases out the task
+                    Then After a lot of surfing i found that there are plenty of libraries out there that eases out the
+                    task
                     and opted for <a href="https://wiki.shibboleth.net/confluence/display/OS30/Home">openSAML</a>
                     With that I was able to get everything right very quickly. Not to forget that you might need a few
                     libraries that must be added as dependencies.
-        
+
                     You can take a look at a part of the code that i implemented <a href="https://github.com/sdivakarrajesh/integrating_saml_authentication">here
                         in my GitHub repo</a>
                 </p>
-        
-        
+
+
             </div>
         </div>
 
@@ -161,7 +174,8 @@
                 target="_blank">Divakar
                 Rajesh S</a>.</p>
     </footer>
-
+    <script src="../scripts/jquery-3.1.0.min.js"></script>
+    <script src="../scripts/scroll-behavior.js"></script>
 </body>
 
 </html>

@@ -51,6 +51,10 @@ a {
     color: rgba(255, 255, 255, 0.74);
 }
 
+.fa-bars {
+    display: none;
+}
+
 .title {
     margin: 0;
     padding: 0;
@@ -66,6 +70,9 @@ a {
     height: 400px;
     text-align: center;
     background-color: rgb(43, 42, 42);
+    background-image: url(../assets/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .banner-content {
@@ -146,7 +153,6 @@ a {
 .projects-options>a {
     display: block;
     padding: 10px;
-    
     border-width: 0;
     border-top: 1px solid #e0e0e0;
 }
@@ -220,18 +226,26 @@ a {
 }
 
 .moto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 100px;
     margin-bottom: 100px;
-    height: 500px;
+    height: 550px;
     width: 100%;
     font-size: 2em;
-    background-color: #282828;
+    background-color: rgb(43, 42, 42);
     color: white;
     opacity: 0.9;
     line-height: 2;
-    position: relative;
-    vertical-align: middle;
+    background-image: url(../assets/bg1.png);
+    background-size: cover;
+}
+
+.internship {
+    background-image: none;
 }
 
 .moto-content {
@@ -268,19 +282,18 @@ a {
 }
 
 .btn {
-    border-radius: 7px;
+    border-radius: 70px;
     margin-top: 50px;
-    border: white solid 1px;
-    width: 400px;
+    width: 375px;
     height: 70px;
     font-size: 1em;
-    background-color: #282828;
-    color: white;
-    letter-spacing: 3px;
+    background-color: white;
+    color: black;
+    letter-spacing: 2px;
 }
 
 .btn:hover {
-    background-color: rgba(255, 255, 255, 0.76);
+    background-color: rgb(235, 233, 233);
     color: black;
     cursor: pointer;
 }
@@ -428,7 +441,7 @@ a {
     color: rgb(122, 121, 121);
     font-size: 0.7em;
     display: block;
-    width: 500px;
+    width: 400px;
     margin: 2em;
     padding: 1em;
     border-radius: 5px;
@@ -596,6 +609,32 @@ footer a {
 }
 
 @media screen and (max-width:1023px) {
+    #menu {
+        height: 50px;
+        padding-top: 10px;
+    }
+    #menu>nav>div:nth-child(1) {
+        display: block;
+    }
+    #menu>nav {
+        top: 10%;
+        left: 0;
+        float: left;
+    }
+    #menu>nav>div:not(:first-child) {
+        display: none;
+        height: 50px;
+    }
+    #menu>nav>div:nth-child(2) {
+        margin-top: 15px;
+    }
+    .projects-nav:hover .projects-options{
+        display: none;
+    }
+    .fa-bars {
+        color: white;
+        box-shadow: none;
+    }
     .portfolio {
         width: 100%;
         margin: 0px;
@@ -603,7 +642,7 @@ footer a {
     .portfolio>div {
         float: none;
         width: 90%;
-        margin: 25px auto;
+        margin-top:20px;
     }
     .banner {
         height: 200px;
@@ -621,12 +660,13 @@ footer a {
         font-size: 0.9em;
     }
     #intro {
-        font-size: 1.5em;
+        margin-top: 40px;
+        font-size: 0.8em;
     }
     #circle-pic {
-        width: 35%;
+        width: 50%;
         height: auto;
-        float: left;
+        margin-bottom: 40px;
     }
     #hi {
         display: inline-block;
@@ -634,11 +674,15 @@ footer a {
         top: 30px;
         margin-left: 20px;
     }
+    #intro-text{
+        
+        margin: 5px;
+    }
     .moto {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
     .btn {
-        width: 75%;
+        width: 300px;
     }
     .heading {
         font-size: 1.5rem;
@@ -649,7 +693,15 @@ footer a {
     .button-card {
         margin: 50px auto;
         padding: 16px;
-        width: 90%;
+        width: 80%;
         font-size: 1.2rem;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+    .card{
+        margin: auto;
+        width: 80%;
+        padding: 1em;
     }
 }

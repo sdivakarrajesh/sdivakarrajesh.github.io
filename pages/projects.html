@@ -30,26 +30,27 @@
         <section id="mobile-section">
             <div class="mobile-content">
                 <div>
-                    <img src="../assets/vectors/img3.jpg" alt="test">
+                    <img src="../assets/vectors/mobile.png" alt="test">
                 </div>
                 <div>
                     <h2 class="heading black">Mobile Apps</h2>
                     <h2>Flutter</h2>
                     <h3>My JioFi</h3> - An Application that lets users to easily manage their JioFi 6(JMR815) <br>
-                     with a sleek easy-to-use dashboard
+                    with a sleek easy-to-use dashboard
                     <h2>Java</h2>
-                    <h3>E-Slambook</h3> - An Social media application that allows users to share their favorite moments 
+                    <h3>E-Slambook</h3> - An Social media application that allows users to share their favorite moments
                     with friends and colleges <br>
                     <h3>Sheet2List</h3> - An Application that parses data from databases and presents them in an easy
                     to browse format in the form of searchable list that expands the fields upon selection <br> <br>
-                    <a href="http://play.google.com/store/apps/dev?id=8739594812324937227" class="button_style try">View Play Store Profile</a>
-                    
+                    <a href="http://play.google.com/store/apps/dev?id=8739594812324937227" class="button_style try">View
+                        Play Store Profile</a>
+
                 </div>
             </div>
         </section>
         <section id="web-section">
             <div class="web-content">
-                <div>
+                <div class="item1">
                     <h2 class="heading black">Web Development</h2>
                     <h3>PlaySync</h3> - A WebApp built with node.js that allows users to sync their users YouTube video
                     playback (Built with socket.io) <br> <br>
@@ -58,7 +59,7 @@
                     separate SAML SSO
                     login flows for users and admins. <br> <br>
                     <a href="internship.html" class="button_style try">Read more about it here</a>
-                    
+
                 </div>
                 <div>
                     <img src="../assets/vectors/img1.png" alt="" class="right-img">
@@ -79,7 +80,7 @@
                     made one!
                     <h3>EnList</h3> - My venture into building beautiful cross platfrom desktop applications using
                     Electron.js <br> <br>
-                    
+
                     <a href="https://github.com/sdivakarrajesh" class="button_style try">View Source code in github</a>
                 </div>
             </div>
@@ -90,9 +91,23 @@
     <script src="../scripts/snap-scroll.min.js"></script>
     <script>
         $(document).ready(function () {
-            $("section").SnapScroll();
-            $.scrollTo = $.fn.scrollTo = function (x, y, options) {
+            var isMobile;
+            
+            if ($(".web-content").css("flex-wrap") === "wrap") {
+                isMobile = true;
+                console.log("mobile");
+            }
+            else {
+                isMobile = false;
+                console.log("not mobile");
+            }
+            if (isMobile === false) {
+                $("section").SnapScroll();
+                
 
+            }
+
+                            $.scrollTo = $.fn.scrollTo = function (x, y, options) {
 
                 if (!(this instanceof $)) return $.fn.scrollTo.apply($('html, body'), arguments);
                 options = $.extend({}, {
@@ -131,10 +146,6 @@
                 var windowHeight = $(window).height();
                 var docHeight = $(document).height();
                 var scroll = $(window).scrollTop();
-
-
-
-
 
                 for (var i = 0; i < aArray.length; i++) {
                     var theID = aArray[i];
@@ -176,6 +187,7 @@
 
 
             });
+
         });
     </script>
 
