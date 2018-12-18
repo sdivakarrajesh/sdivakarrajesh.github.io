@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/carousel.css">
     <link href="stylesheets/style.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <title>Divakar Rajesh | Portfolio</title>
 </head>
 
@@ -63,6 +66,8 @@
             <br>
             <br>
         </div>
+        
+
         <div class="moto" align="center">
 
             Most of my works are open source <br>
@@ -70,7 +75,61 @@
             <a href="https://github.com/sdivakarrajesh"><button class="btn">View Github Profile</button></a>
 
         </div>
-        <h2 class="heading" align="center">Check out my works</h2>
+        <h2 class="heading" align="center">Featured works</h2>
+        <div class="carousel-section">
+            <div class="carousel">
+                <ul class="slides">
+                    <input type="radio" name="radio-buttons" id="img-1" checked />
+                    <li class="slide-container">
+                        <div class="slide-image">
+                            <img src="assets/banner.png">
+                        </div>
+                        <div class="carousel-controls">
+                            <label for="img-3" class="prev-slide">
+                                <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-2" class="next-slide">
+                                <span>&rsaquo;</span>
+                            </label>
+                        </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-2" />
+                    <li class="slide-container">
+                        <div class="slide-image">
+                            <img src="assets/banner.png">
+                        </div>
+                        <div class="carousel-controls">
+                            <label for="img-1" class="prev-slide">
+                                <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-3" class="next-slide">
+                                <span>&rsaquo;</span>
+                            </label>
+                        </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-3" />
+                    <li class="slide-container">
+                        <div class="slide-image">
+                            <img src="assets/banner.png">
+                        </div>
+                        <div class="carousel-controls">
+                            <label for="img-2" class="prev-slide">
+                                <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-1" class="next-slide">
+                                <span>&rsaquo;</span>
+                            </label>
+                        </div>
+                    </li>
+                    <div class="carousel-dots">
+                        <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                        <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                        <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <h2 class="heading" align="center">Check out my other works</h2>
         <div class="portfolio">
 
             <div class="portfolio-block" id="desktop" onclick="window.location.href ='pages/projects.html#desktop-section'">
@@ -156,6 +215,7 @@
 
     <script src="scripts/jquery-3.1.0.min.js"></script>
     <script src="scripts/scroll-behavior.js"></script>
+
 
 
 </body>
