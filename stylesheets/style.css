@@ -39,17 +39,18 @@ a {
 
 #menu>nav>div {
     display: inline;
+    padding: 10px;
 }
 
 #menu>nav>div>a {
-    margin: 0 10px 10px 10px;
+    
     text-decoration: none;
     color: white;
     font-weight: bold;
     padding: 10px;
 }
 
-#menu>nav>div>a:hover {
+#menu>nav>div>a:hover,.text-link:hover {
     color: rgba(255, 255, 255, 0.74);
 }
 
