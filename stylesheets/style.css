@@ -5,9 +5,11 @@ body {
     letter-spacing: 1px;
     color: #323b40;
 }
-p{
+
+p {
     margin: 0;
 }
+
 a {
     text-decoration: none;
     color: black;
@@ -43,19 +45,17 @@ a {
 }
 
 #menu>nav>div>a {
-    
     text-decoration: none;
     color: white;
     font-weight: bold;
     padding: 10px;
 }
 
-#menu>nav>div>a:hover,.text-link:hover {
+#menu>nav>div>a:hover, .text-link:hover {
     color: rgba(255, 255, 255, 0.74);
 }
-
-.fa-bars {
-    display: none;
+#menu>nav>.fa-bars{
+    display: none
 }
 
 .title {
@@ -610,30 +610,38 @@ footer a {
     color: white;
 }
 
+
+
 @media screen and (max-width:1023px) {
     #menu {
-        height: 50px;
+        height: 40px;
         padding-top: 10px;
+        
     }
     #menu>nav>div:nth-child(1) {
         display: block;
     }
     #menu>nav {
-        top: 10%;
+        top: 5%;
         left: 0;
         float: left;
     }
     #menu>nav>div:not(:first-child) {
         display: none;
-        height: 50px;
+        height: 30px;
     }
     #menu>nav>div:nth-child(2) {
-        margin-top: 15px;
+        margin-top: 5px;
     }
-    .projects-nav:hover .projects-options{
+    #menu>nav>div:last-child{
+        margin-bottom: 5px;
+    }
+    .projects-nav:hover .projects-options {
         display: none;
     }
-    .fa-bars {
+    #menu>nav>.fa-bars {
+        margin: 5px;
+        display: inline;
         color: white;
         box-shadow: none;
     }
@@ -644,7 +652,7 @@ footer a {
     .portfolio>div {
         float: none;
         width: 90%;
-        margin-top:20px;
+        margin-top: 20px;
     }
     .banner {
         height: 200px;
@@ -676,8 +684,7 @@ footer a {
         top: 30px;
         margin-left: 20px;
     }
-    #intro-text{
-        
+    #intro-text {
         margin: 5px;
     }
     .moto {
@@ -698,15 +705,15 @@ footer a {
         width: 80%;
         font-size: 1.2rem;
     }
-    h1{
+    h1 {
         font-size: 1.5em;
     }
-    .card{
+    .card {
         margin: auto;
         width: 80%;
         padding: 1em;
     }
-    .carousel-section{
+    .carousel-section {
         display: none;
     }
 }
