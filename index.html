@@ -5,167 +5,198 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="stylesheets/style.css" rel="stylesheet" type="text/css" media="all" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
     <title>Divakar Rajesh | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Pacifico&display=swap" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148739208-1"></script>
+    <script async src='./assets/js/type_writer.js'></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-148739208-1');
+    </script>
 </head>
 
 <body>
-    <div class="sticky-header">
-        <div id="menu">
+    <header class="p-3">
+        <div class="me">Divakar Rajesh</div>
+        <div class="fa fa-bars float-right"></div>
 
-            <nav>
-                <div class="fa fa-bars"></div>
-                <div class="home-nav"><a href="index.html">HOME</a></div>
+        <nav class="nav float-right" id='nav'>
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="pages/projects.html">Projects</a></li>
+                <li><a href="pages/other.html">Other</a></li>
+            </ul>
+        </nav>
 
-                <div class="projects-nav"><a href="pages/projects.html">PROJECTS</a>
-                    <div class="projects-options">
-                        <a href="pages/projects.html#web-section">WEB</a>
-                        <a href="pages/projects.html#mobile-section">MOBILE</a>
-                        <a href="pages/projects.html#desktop-section">DESKTOP</a>
+    </header>
+    <div class="portfolio-body mt-5">
+        <div class="container section">
+            <div class="row align-items-center">
+                <div class="col-md-12 text-center">
+                    <h5 class="pitch">Hi, Divakar Rajesh here,</h5>
+                    <h4 class="sub-pitch">What do I do?</h4>
+                </div>
+
+            </div>
+            <br><br><br>
+            <h1 class="text-center">
+                <a href="" class="typewrite" data-period="500" data-type='["I am a Product Engineer.", "A Mobile Application Developer.", "I work on Web Technologies.", "Basically everything la hor!"]'>
+                    <span class="wrap"></span>
+                </a>
+            </h1>
+        </div>
+        <div class="container bg-triangle">
+            <h2 class="heading" align="center">Check out my works</h2>
+            <div class="portfolio">
+
+                <div class="portfolio-block" id="desktop" onclick="window.location.href ='pages/projects.html#desktop-section'">
+                    <div class="line"></div>
+                    <div class="content">
+                        <img src="assets/images/desktop.png" alt="desktop-app-icon" class="category-icon">
+                        <span class="app-category" id="desktop">Desktop</span>
+                        <ul class="apps">
+                            <li>PDF Doctor</li>
+                            <li>SizeIt - For Images</li>
+                            <li>EnList - a Crossplatfrom Electron-js app</li>
+                        </ul>
+                        <a href=""><span class="explore" id="desktop-explore">3 projects</span></a>
+
+
+                    </div>
+
+                </div>
+                <div class="portfolio-block" id="mobile" onclick="window.location.href ='pages/projects.html#mobile-section'">
+                    <div class="line"></div>
+                    <div class="content">
+                        <img src="assets/images/mobile.png" alt="mobile-app-icon" class="category-icon">
+                        <span class="app-category" id="mobile">Mobile</span>
+                        <ul class="apps">
+                            <li>With Flutter - My JioFi Hotspot Manager</li>
+                            <li>With Flutter - 7th Pay</li>
+                            <li>GPA/CGPA calculator</li>
+                            <li>Sheet2List - Database Management</li>
+                            <li>E-Slambook - slambook the modern way</li>
+
+
+                        </ul>
+                        <a href=""><span class="explore" id="mobile-explore">5 Applications</span></a>
                     </div>
                 </div>
 
-                <div class="other-nav"><a href="pages/internship.html">OTHER</a></div>
-
-            </nav>
-        </div>
-    </div>
-
-
-    <div id="container">
-        <div class="banner">
-            <div class="banner-content">Divakar Rajesh</div>
-            <div class="banner-btm">ANDROID DEVELOPER | DEEP LEARNING BEGINNER</div>
-        </div>
-        <div id="intro-block" align="center">
-            <br>
-            <br>
-            <br>
-            <div id="intro-image">
-                <img src="assets/profile pic.jpg" alt="circular image" id="circle-pic">
-
-                <div id="intro-text">
-                    <span id="hi">Hi!</span>
-                    <p id="intro">
-
-                        I'm currently on my final year - Bachelors in Engineering <br>
-                        With a GPA of 8.65/10 <br>
-                        At Velammal College Of Engineering and Technology, Madurai <br>
-                        Affiliated to Anna University. <br>
-                    </p>
+                <div class="portfolio-block" id="web" onclick="window.location.href ='pages/projects.html#web-section'">
+                    <div class="line"></div>
+                    <div class="content">
+                        <img src="assets/images/web.png" alt="web-app-icon" class="category-icon">
+                        <span class="app-category" id="web">Web</span>
+                        <ul class="apps">
+                            <li>PlaySync - With node.js and websockets </li>
+                            <li>Website - My portfolio</li>
+                            <li>Books - Online book reading platform</li>
+                        </ul>
+                        <a href=""><span class="explore" id="web-explore">3 Projects</span></a>
+                    </div>
                 </div>
+
+            </div>
+        </div>
+        <div class="strip section py-5 bubbles-container mt-2-m">
+            <ul class="bubbles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="my-auto">
+                <div class="text-center my-5 pitch c-grey">Most of my works are open source. <br /> So, be sure to check out my github repos <br /></div>
+                <div class="text-center my-5"><a class="link-btn">View my Github Profile</a></div>
             </div>
 
-            <br>
-            <br>
-            <br>
         </div>
-        
+        <div class="container my-5">
+            <h5 class="pitch text-center mx-auto">
+                Companies I've worked with
+            </h5>
+            <br><br><br>
+            <div class="row justify-content-center mt-5">
 
-        <div class="moto" align="center">
+                <div class="col-md-4 card mx-2 p-5 text-center">
+                    <div class=" mx-auto">
+                        <img src="assets/images/sensara_logo.png" alt="" class="logo-container img-responsive" />
+                    </div>
+                    <div class="company-name">Sensara Technologies</div>
 
-            Most of my works are open source <br>
-            So, be sure to check out my github repos <br>
-            <a href="https://github.com/sdivakarrajesh"><button class="btn">View Github Profile</button></a>
-
-        </div>
-
-        <h2 class="heading" align="center">Check out my works</h2>
-        <div class="portfolio">
-
-            <div class="portfolio-block" id="desktop" onclick="window.location.href ='pages/projects.html#desktop-section'">
-                <div class="line"></div>
-                <div class="content">
-                    <img src="assets/desktop.png" alt="desktop-app-icon" class="category-icon">
-                    <span class="app-category" id="desktop">Desktop</span>
-                    <ul class="apps">
-                        <li>PDF Doctor</li>
-                        <li>SizeIt - For Images</li>
-                        <li>EnList - a Crossplatfrom Electron-js app</li>
-                    </ul>
-                    <a href=""><span class="explore" id="desktop-explore">3 projects</span></a>
-
+                </div>
+                <div class="col-md-4 card mx-2 p-5 text-center mt-2-m">
+                    <div class=" mx-auto">
+                        <img src="assets/images/zoho-logo.png" alt="" class=" logo-container img-responsive" />
+                    </div>
+                    <div class="company-name">Zoho Corporation</div>
 
                 </div>
 
             </div>
-            <div class="portfolio-block" id="mobile" onclick="window.location.href ='pages/projects.html#mobile-section'">
-                <div class="line"></div>
-                <div class="content">
-                    <img src="assets/mobile.png" alt="mobile-app-icon" class="category-icon">
-                    <span class="app-category" id="mobile">Mobile</span>
-                    <ul class="apps">
-                        <li>With Flutter - My JioFi Hotspot Manager</li>
-                        <li>With Flutter - 7th Pay</li>
-                        <li>GPA/CGPA calculator</li>
-                        <li>Sheet2List - Database Management</li>
-                        <li>E-Slambook - slambook the modern way</li>
-                        
-                        
-                    </ul>
-                    <a href=""><span class="explore" id="mobile-explore">5 Applications</span></a>
+            <br><br><br>
+
+            <div class="row align-items-center my-5">
+                <div class="col-md-12">
+                    <div class="pitch text-center">
+                        Tech Stack I've worked on
+                        <div class="my-5">
+                            <img src="assets/images/stack_android.png" alt="" class="stack-img img-responsive">
+                            <img src="assets/images/stack_react.png" alt="" class="stack-img img-responsive">
+                            <img src="assets/images/stack_redux.png" alt="" class="stack-img img-responsive">
+                            <img src="assets/images/stack_django.png" alt="" class="stack-img img-responsive">
+                            <img src="assets/images/stack_flutter.png" alt="" class="stack-img img-responsive">
+                        </div>
+
+                    </div>
                 </div>
             </div>
+        </div>
 
-            <div class="portfolio-block" id="web" onclick="window.location.href ='pages/projects.html#web-section'">
-                <div class="line"></div>
-                <div class="content">
-                    <img src="assets/web.png" alt="web-app-icon" class="category-icon">
-                    <span class="app-category" id="web">Web</span>
-                    <ul class="apps">
-                        <li>PlaySync - With node.js and websockets </li>
-                        <li>Website - My portfolio</li>
-                        <li>Books - Online book reading platform</li>
-                    </ul>
-                    <a href=""><span class="explore" id="web-explore">3 Projects</span></a>
+        <div id="social-media" class="text-center">
+            <div class="right-offset-container">
+                <div class="pitch text-center">
+                    What's he lookin' at? I don't know!🤷‍♂️<br>
                 </div>
+                <div class="sub-pitch text-center">
+                    if it's me who you are looking for, you know where to find me👇
+                </div>
+
             </div>
 
+            <br><br><br>
+            <a href="mailto:sdivakarrajesh@gmail.com" target="_blank" class="fa my-fa fa-google"></a>
+            <a href="https://mobile.twitter.com/DivakarRajeshS" class="fa my-fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/in/sdivakarrajesh/" class="fa my-fa fa-linkedin"></a>
+            <a href="https://github.com/sdivakarrajesh" class="fa my-fa fa-github"></a>
         </div>
-        <div class="moto internship" align="center">
+        <img src="assets/images/sitting_man2.svg" alt="" class="olap-image p-0" />
 
-            <div class="moto-content"><span class="heading">My Internship at Zoho Corporation</span> <br>
-                As Software Engineering Intern <br>
-                <a href="pages/internship.html" class="button_style">Read more About it here</a></div>
-
-        </div>
-        <div class="playprofile" align="center">
-            <span class="heading">With more than 8.1k downloads</span>
-            <br><br>
-            <span class="moto-content">Check out the apps I've published</span>
-            <a href="http://play.google.com/store/apps/dev?id=8739594812324937227" class="button-card">View My Android
-                Play Store Profile</a>
-
-        </div>
-        <div id="social-media" align="center">
-            <a href="https://plus.google.com/u/0/+DivakarRajesh" class="fa fa-google"></a>
-            <a href="https://mobile.twitter.com/DivakarRajeshS" class="fa fa-twitter"></a>
-            <a href="https://www.linkedin.com/in/sdivakarrajesh/" class="fa fa-linkedin"></a>
-            <a href="https://github.com/sdivakarrajesh" class="fa fa-github"></a>
-        </div>
-
-        <div id="social" align="center">
-            E-mail your suggestions, collaboration, or just talk!<br>
-            sdivakarrajesh@gmail.com
-        </div>
     </div>
 
     <footer>
-        <p>&copy; 2018. All rights reserved. Designed with &#9829 by <a class="text-link"href="https://www.facebook.com/divakar.rajesh"
-                target="_blank">Divakar
-                Rajesh S</a>.</p>
+        <div class="footer-content text-right text-light">
+            &copy; 2019. Designed with ❤ by Divakar Rajesh
+        </div>
     </footer>
-
-    <script src="scripts/jquery-3.1.0.min.js"></script>
-    <script src="scripts/scroll-behavior.js"></script>
-
-
-
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
