@@ -252,13 +252,13 @@ a:hover {
 }
 
 .olap-image {
-    /* display: inline-block; */
     position: absolute;
     max-width: 50%;
     z-index: 1;
+    top: 0px;
     left: -50px;
     bottom: 0px;
-    transform: translate(-20%, 65%);
+    transform: translate(-20%, -40%);
 }
 
 .bg-triangle {
@@ -419,10 +419,9 @@ a:hover {
 
 #social-media {
     position: relative;
-    margin: 50px;
-    margin-top: 150px;
     min-height: 64px;
     z-index: 100000;
+    margin-bottom: 20px;
 }
 
 .my-fa {
@@ -568,7 +567,7 @@ a:hover {
 
 footer {
     position: relative;
-    height: 410px;
+    height: 430px;
     background-color: #3F3D56;
 }
 
@@ -585,6 +584,12 @@ footer {
 }
 
 @media screen and (max-width:768px) {
+    .pitch {
+        font-size: 1.5em;
+    }
+    .heading {
+        font-size: 1.5rem;
+    }
     .fa.fa-bars {
         display: inline-block;
         position: relative;
@@ -626,22 +631,18 @@ footer {
         width: 90%;
         margin-top: 20px;
     }
-    .olap-image {
-        position: absolute;
-        max-width: 50%;
-        z-index: 1;
-        left: -50px;
-        bottom: 0px;
-        transform: translate(-20%, 75%);
-    }
     .mt-2-m {
         margin-top: 2em;
     }
-    footer {
-        height: 200px;
+    .right-offset-container {
+        position: relative;
+        left: 0px;
+    }
+    .olap-image {
+        max-width: 100%;
     }
     .footer-content {
-        left: 60%;
+        left: 50%;
         transform: translateX(-50%);
         white-space: nowrap;
         z-index: 10;
