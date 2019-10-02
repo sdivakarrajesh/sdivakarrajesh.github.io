@@ -1,17 +1,26 @@
 $(document).ready(() => {
     var displayed = 0;
     $(".fa-bars").click(() => {
-        if (displayed === 0) {
-            $("#nav>ul>li").css("display", "block");
-            $("#nav").css({ "height": "100vh" });
-            console.log('displayed')
-            displayed = 1;
-        } else {
-            $("#nav>ul>li").css("display", "none");
-            $("#nav").css("height", "0px");
-            console.log('not displayed')
+        $("#nav>ul>li").css("display", "block");
+        $("#nav>ul").css("padding-top", "70px");
+        $("#nav").css({ "height": "100vh" });
+        console.log('displayed')
+        displayed = 1;
+        $(".fa-bars").css("display", "none");
+        $(".fa-times").css("display", "inline-block");
 
-            displayed = 0;
-        }
+
     });
+
+    $(".fa-times").click(() => {
+        $("#nav>ul>li").css("display", "none");
+        $("#nav>ul").css("padding-top", "20px");
+        $("#nav").css("height", "0px");
+        console.log('not displayed')
+        displayed = 0;
+        $(".fa-times").css("display", "none");
+        $(".fa-bars").css("display", "inline-block");
+
+    });
+
 })

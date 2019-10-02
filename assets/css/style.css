@@ -579,7 +579,8 @@ footer {
     transform: translateX(-50%);
 }
 
-.fa.fa-bars {
+.fa.fa-bars,
+.fa.fa-times {
     display: none;
 }
 
@@ -598,21 +599,22 @@ footer {
         right: 0px;
         transform: translate(0, -50%);
     }
-    .nav {
-        position: absolute;
-        top: 100px;
-        background-color: #F9F9F9;
-        width: 100%;
-        height: 0px;
-        z-index: 100;
-        transition: all 0.5s ease-out;
-        text-align: center;
+    .fa.fa-times {
+        display: none;
+        font-size: 30px;
+        padding: 20px;
     }
     .nav {
         display: block;
         position: fixed;
         left: 0;
+        top: 0px;
         width: 100vw;
+        background-color: #F9F9F9;
+        height: 0px;
+        z-index: 100;
+        transition: all 0.5s ease-out;
+        text-align: center;
     }
     .nav>ul {
         width: 100%;
