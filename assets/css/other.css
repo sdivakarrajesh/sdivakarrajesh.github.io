@@ -11,6 +11,11 @@ body {
     overflow: hidden;
 }
 
+#particles-js {
+    width: 100vw;
+    height: 100vh;
+}
+
 .other-content {
     position: fixed;
     height: 100%;

@@ -62,6 +62,10 @@ a:hover {
     vertical-align: middle;
 }
 
+.c-black {
+    color: black;
+}
+
 .c-grey {
     color: #F8F8F8;
 }
@@ -70,12 +74,14 @@ a:hover {
     display: inline-block;
     padding: 20px;
     background-color: #f8f8f8;
+    color: black;
     border-radius: 20px;
     font-size: 1.5em;
     font-weight: 600;
 }
 
 .link-btn:hover {
+    opacity: 0.9;
     cursor: pointer;
 }
 
@@ -118,6 +124,11 @@ a:hover {
     height: 500px;
     width: 100%;
     margin: 0px 0px;
+}
+
+.strip-content {
+    position: relative;
+    z-index: 100;
 }
 
 .bubbles-container {

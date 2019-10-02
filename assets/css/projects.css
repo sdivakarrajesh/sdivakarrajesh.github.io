@@ -47,6 +47,7 @@ body {
     }
     .heading {
         text-align: center;
+        font-size: 1.5em;
     }
     .p-2-m {
         padding: 2em;
