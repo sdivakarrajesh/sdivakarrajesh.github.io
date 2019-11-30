@@ -263,16 +263,6 @@ a:hover {
     color: black;
 }
 
-.olap-image {
-    position: absolute;
-    max-width: 50%;
-    z-index: 1;
-    top: 0px;
-    left: -50px;
-    bottom: 0px;
-    transform: translate(-20%, -40%);
-}
-
 .bg-triangle {
     background-image: url(../images/triangle.png);
     background-repeat: no-repeat;
@@ -651,9 +641,6 @@ footer {
     .right-offset-container {
         position: relative;
         left: 0px;
-    }
-    .olap-image {
-        max-width: 100%;
     }
     .footer-content {
         left: 50%;
