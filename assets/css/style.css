@@ -36,7 +36,7 @@ a:hover {
     list-style-type: none;
 }
 
-.nav>ul>li {
+.nav>ul>a>li {
     display: inline-block;
     padding: 0.5em 1em;
     text-decoration: none;
@@ -44,8 +44,8 @@ a:hover {
     margin: 0px;
 }
 
-.nav>ul>li.current,
-.nav>ul>li:hover,
+.nav>ul>a>li.current,
+.nav>ul>a>li:hover,
 .theme-btn {
     color: white;
     background-color: #FF3352;
@@ -577,7 +577,7 @@ a:hover {
 
 footer {
     position: relative;
-    height: 430px;
+    height: 200px;
     background-color: #3F3D56;
 }
 
