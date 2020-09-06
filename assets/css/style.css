@@ -479,13 +479,13 @@ a:hover {
 .fa-google::after {
     position: absolute;
     top: 20px;
-    content: "Talk to me";
+    content: "Email?";
     font-size: 0.7em;
     opacity: 0;
 }
 
 .fa-google:hover {
-    padding-right: 120px;
+    padding-right: 85px;
 }
 
 .fa-google:hover::after {
@@ -526,12 +526,12 @@ a:hover {
     position: absolute;
     top: 20px;
     font-size: 0.7em;
-    content: "Star Me";
+    content: "Star gazer🌟";
     opacity: 0;
 }
 
 .fa-github:hover {
-    padding-right: 100px;
+    padding-right: 150px;
 }
 
 .fa-github:hover::after {
