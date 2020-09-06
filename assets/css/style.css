@@ -107,6 +107,7 @@ a:hover {
 
 .section {
     min-height: 100vh;
+    position: relative;
 }
 
 .pitch {
@@ -578,7 +579,7 @@ a:hover {
 footer {
     position: relative;
     height: 200px;
-    background-color: #3F3D56;
+    background-color: #292D38;
 }
 
 .footer-content {
