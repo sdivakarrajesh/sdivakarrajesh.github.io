@@ -1,3 +1,11 @@
+html {
+    /* width: 100%; */
+    /* height: 100%; */
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -72,7 +80,7 @@ a:hover {
 
 .link-btn {
     display: inline-block;
-    padding: 20px;
+    padding: 15px 40px;
     background-color: #f8f8f8;
     color: black;
     border-radius: 5px;
@@ -527,12 +535,12 @@ a:hover {
     position: absolute;
     top: 20px;
     font-size: 0.7em;
-    content: "Star gazer🌟";
+    content: "Star gaze🌟";
     opacity: 0;
 }
 
 .fa-github:hover {
-    padding-right: 150px;
+    padding-right: 135px;
 }
 
 .fa-github:hover::after {
